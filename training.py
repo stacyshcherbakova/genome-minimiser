@@ -6,9 +6,9 @@ import torch
 def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, val_loader, beta_start, beta_end, max_norm):
     # global train_loss_vals 
     # train_loss_vals = []
-    global train_loss_vals2 
+    # global train_loss_vals2 
     train_loss_vals2 = []
-    global val_loss_vals
+    # global val_loss_vals
     val_loss_vals = []
     # train_loss = 0.0
     train_loss2 = 0.0
@@ -105,14 +105,16 @@ def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader,
     print(f"Final Average Training Loss (method 2): {final_avg_train_loss2}")
     print(f"Final Average Validation Loss: {final_avg_val_loss}")
 
+    return train_loss_vals2, val_loss_vals
+
 
 # Function used to train the model with KL annealing
 def train_no_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, val_loader, max_norm):
-    global train_loss_vals 
+    # global train_loss_vals 
     train_loss_vals = []
     # global train_loss_vals2 
     # train_loss_vals2 = []
-    global val_loss_vals
+    # global val_loss_vals
     val_loss_vals = []
     train_loss = 0.0
     # train_loss2 = 0.0
@@ -207,3 +209,5 @@ def train_no_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, v
     print(f"\nFinal Average Training Loss (method 1): {final_avg_train_loss}")
     # print(f"Final Average Training Loss (method 2): {final_avg_train_loss2}")
     print(f"Final Average Validation Loss: {final_avg_val_loss}")
+
+    return train_loss_vals, val_loss_vals
