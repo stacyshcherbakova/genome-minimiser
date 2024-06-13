@@ -1,1 +1,12 @@
 __pycache__
+data/F4_complete_presence_absence.csv
+saved_KL_annealing_VAE_100.pt
+saved_KL_annealing_VAE_BD_100.pt
+saved_KL_annealing_VAE_tuned_100.pt
+saved_no_KL_annealing_VAE_100.pt
+saved_single_sample_VAE_1000.pt
+saved_single_sample_VAE_BD.pt
+saved_single_sample_VAE.pt
+saved_small_VAE1_100.pt
+saved_small_VAE1_BD.pt
+saved_small_VAE2_100.pt
