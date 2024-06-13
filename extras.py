@@ -12,8 +12,8 @@ def get_latent_variables(model, data_loader, device):
     model.eval()
     latents = []
     with torch.no_grad():
-        for batch_idx, (data,) in enumerate(data_loader):
-            data = data.to(device)
+        for data in data_loader:
+            data = data[0].to(torch.float).to(device)
             mean, logvar = model.encode(data)
             latents.append(mean.cpu().numpy())
 
@@ -25,7 +25,7 @@ def do_tsne(n_components, latents, fig_name):
     latents_2d = tsne.fit_transform(latents)
 
     plt.figure(figsize=(10, 8))
-    scatter = plt.scatter(latents_2d[:, 0], latents_2d[:, 1], color='dodgerblue')
+    plt.scatter(latents_2d[:, 0], latents_2d[:, 1], color='dodgerblue')
     plt.xlabel('t-SNE Dimension 1')
     plt.ylabel('t-SNE Dimension 2')
     plt.savefig(fig_name, format="pdf", bbox_inches="tight")

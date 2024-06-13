@@ -1,6 +1,7 @@
 # Used libraries
 import torch.nn as nn
 import torch 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Function used to train the model with no KL annealing
 def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, val_loader, beta_start, beta_end, max_norm):
@@ -25,7 +26,7 @@ def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader,
         epoch_train_loss2 = 0.0
 
         for batch in train_loader:
-            data = batch[0].to(torch.float)
+            data = batch[0].to(torch.float).to(device)
             optimizer.zero_grad()
             recon_x, mu, logvar = model(data)
             # print('reco_x:', recon_x[:1, :5])
@@ -62,7 +63,7 @@ def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader,
 
         with torch.no_grad():
             for batch in val_loader:
-                data = batch[0]
+                data = batch[0].to(torch.float).to(device)
                 recon_x, mu, logvar = model(data)
                 reconstruction_loss = nn.functional.binary_cross_entropy(recon_x, data, reduction='sum')
                 kl_divergence_loss = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
@@ -130,7 +131,9 @@ def train_no_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, v
         # epoch_train_loss2 = 0.0
 
         for batch in train_loader:
-            data = batch[0].to(torch.float)
+            if batch[0].size(0) == 1:
+                continue 
+            data = batch[0].to(torch.float).to(device)
             optimizer.zero_grad()
             recon_x, mu, logvar = model(data)
             # print('reco_x:', recon_x[:1, :5])
@@ -167,7 +170,9 @@ def train_no_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, v
 
         with torch.no_grad():
             for batch in val_loader:
-                data = batch[0]
+                if batch[0].size(0) == 1:
+                    continue 
+                data = batch[0].to(torch.float).to(device)
                 recon_x, mu, logvar = model(data)
                 reconstruction_loss = nn.functional.binary_cross_entropy(recon_x, data, reduction='sum')
                 kl_divergence_loss = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
