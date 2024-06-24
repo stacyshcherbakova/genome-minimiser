@@ -13,8 +13,14 @@
 #     echo -e "$AccessionID\t$Phylogroup"
 # done >> data/accessionID_phylogroup2.txt
 
-## Extracting metadata for a big dataset 
+# ## Extracting metadata for a big dataset 
+# cd /Users/anastasiiashcherbakova/git_projects/masters_project/
+
+# cut -d$',' -f1,12 /Users/anastasiiashcherbakova/Desktop/diss_track/F1_genome_metadata.csv > data/accessionID_phylogroup_BD.txt
+
+## Extracting metadata for a big dataset FOR PCAs
 cd /Users/anastasiiashcherbakova/git_projects/masters_project/
 
-cut -d$',' -f1,12 /Users/anastasiiashcherbakova/Desktop/diss_track/F1_genome_metadata.csv > data/accessionID_phylogroup_BD.txt
+cut -d$',' -f1,4,6,7,9,11,12,17,19 /Users/anastasiiashcherbakova/Desktop/diss_track/F1_genome_metadata.csv > data/metadata_BD.txt
+
 

@@ -1,6 +1,7 @@
 # Import all the libraries
 import pandas as pd 
 import numpy as np 
+import itertools
 import matplotlib.pyplot as plt
 import sklearn
 from VAE_model import *
@@ -11,7 +12,7 @@ from extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-folder = "3_train/"
+folder = "5_new_params/"
 
 print("** START OF THE SCRIPT **\n")
 
@@ -20,6 +21,7 @@ print("LOADING THE DATASET...")
 large_data = pd.read_csv("F4_complete_presence_absence.csv", index_col=[0], header=[0])
 large_data.columns = large_data.columns.str.upper()
 phylogroup_data = pd.read_csv("accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
+
 data_without_lineage = large_data.drop(index=['Lineage'])
 merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')
 
@@ -68,10 +70,10 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 print("PREPPING MODEL INPUTS...")
 # Model inputs 
 hidden_dim = 512
-latent_dim = 64
+latent_dim = 32
 beta_start = 0.1
 beta_end = 1.0
-n_epochs = 1
+n_epochs = 100
 max_norm = 1.0 
 input_dim = data_array_t.shape[1]
 print(f"Input dimention: {input_dim}")
@@ -85,7 +87,7 @@ print("TRAINING STARTED...")
 train_loss_vals2, val_loss_vals = train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)
 
 # Save trained model
-torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD_100_new_2.pt")
+torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD_100_AHPT.pt")
 print("Model saved.")
 
 ## Generating a comparison graph 
@@ -93,7 +95,7 @@ print("GENERATING A COMPARISON GRAPH...")
 # Generating points for graphs
 epochs = np.linspace(1, n_epochs, num=n_epochs)
 # Plot train vs val loss graph
-name = folder+"second_model_train_val_loss_BD_100_new_2.pdf"
+name = folder+"second_model_train_val_loss_BD_100_AHPT.pdf"
 plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
 ## Calculating F1 scores 
@@ -123,17 +125,30 @@ recon_x_binarized_np = recon_x_binarized.cpu().numpy().flatten()
 f1 = sklearn.metrics.f1_score(all_test_data_np, recon_x_binarized_np)
 print(f'F1 Score: {f1:.2f}')
 
+accuracy = sklearn.metrics.accuracy_score(all_test_data_np, recon_x_binarized_np)
+print(f'Accuracy Score: {accuracy:.2f}')
+
 # Calcualting F1 score for each sample (comapring the target to reconstruction)
 f1_scores = []
+accuracy_scores = []
 for genome_x, genome in zip(recon_x_binarized.cpu(), all_test_data.cpu().int()):
     f1_scores.append(sklearn.metrics.f1_score(genome_x.numpy(), genome.numpy()))
+    accuracy_scores.append(sklearn.metrics.accuracy_score(genome_x.numpy(), genome.numpy()))
 
 # Ploting a histogram of all calculated F1 scores 
 plt.figure(figsize=(10,8))
 plt.hist(f1_scores, color='dodgerblue')
 plt.xlabel("F1 score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"f1_score_frequency_test_set_100_new_2.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"f1_score_frequency_test_set_100_AHPT.pdf", format="pdf", bbox_inches="tight")
+plt.show()
+
+# Ploting a histogram of all calculated Accuracy scores scores 
+plt.figure(figsize=(10,8))
+plt.hist(accuracy_scores, color='dodgerblue')
+plt.xlabel("Accuracy score")
+plt.ylabel("Frequency")
+plt.savefig(folder+"accuracy_score_frequency_test_set_100_AHPT.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 ## Exploring latent space
@@ -142,7 +157,7 @@ print("EXPLORING THE LATENT SPACE...")
 latents = get_latent_variables(model, test_loader, device)
 
 # Apply t-SNE for dimensionality reduction
-name = folder+"tsne_latent_space_visualisation_BD_100_new_2.pdf"
+name = folder+"tsne_latent_space_visualisation_BD_100_AHPT.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)
@@ -156,7 +171,7 @@ plt.savefig(name, format="pdf", bbox_inches="tight")
 plt.show()
 
 # Apply PCA
-name = folder+"pca_latent_space_visualisation_BD_100_new_2.pdf"
+name = folder+"pca_latent_space_visualisation_BD_100_AHPT.pdf"
 # do_pca(n_components=2, latents=latents, fig_name=name)
 # Apply PCA
 pca = PCA(n_components=2)
@@ -168,4 +183,25 @@ sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'], data=df_pca)
 plt.savefig(name, format="pdf", bbox_inches="tight")
 plt.show()
 
-print("\n** SCRIPT IS DONE **")
+print("\n** MAIN SCRIPT IS DONE **")
+
+# print("\nHyperparameter tuning")
+# # Gridsearch
+# input_dim = data_array_t.shape[1]
+# print(f"Input dimention: {input_dim}")
+# hidden_dim_values = [256, 512, 1024]
+# latent_dim_values = [32, 64, 128]
+# learning_rate_values = [0.01, 1e-3] # Decrease of learning rate causes higher average train loss, better if 0.01, 0.001
+# max_norm = 1.0 
+# beta_start = 0.1
+# beta_end = 1.0
+
+# # beta_start, beta_end, max_norm
+# for hidden_dim, latent_dim, learning_rate in itertools.product(
+#     hidden_dim_values, latent_dim_values, learning_rate_values): #beta_start_values, beta_end_values, max_norm_values
+#     print(f"Training with hidden_dim={hidden_dim}, latent_dim={latent_dim}, learning_rate={learning_rate}") # beta_start={beta_start}, beta_end={beta_end}, max_norm={max_norm}"
+#     model = VAE(input_dim, hidden_dim, latent_dim).to(device)
+#     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+#     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
+#     train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=10, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)
+#     print("--------------------------------------------------------------------------------------")

@@ -51,3 +51,25 @@ def plot_loss_vs_epochs_graph(epochs, train_loss_vals, val_loss_vals, fig_name):
     plt.legend()
     plt.savefig(fig_name, format="pdf", bbox_inches="tight")
     plt.show()
+
+def custom_lineage_group(lineage):
+    if lineage <= 10:
+        return 'Lineage <= 10'
+    elif lineage <= 20:
+        return 'Lineage <= 20'
+    elif lineage <= 30:
+        return 'Lineage <= 30'
+    elif lineage <= 40:
+        return 'Lineage <= 40'
+    else:
+        return 'Lineage > 40'
+    
+def custom_genome_length_group(length):
+    if length <= 4500:
+        return 'GS <= 4500 genes'
+    elif 4500 < length <= 4750:
+        return '4500 < GS < 4750 genes'
+    elif 4750 < length <= 5000:
+        return '4750 < GS < 5000 genes'
+    else:
+        return 'GS > 5000 genes'
