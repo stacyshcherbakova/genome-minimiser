@@ -12,7 +12,7 @@ from extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-folder = "5_new_params/"
+folder = "7_all_genes_new_params/"
 
 print("** START OF THE SCRIPT **\n")
 
@@ -23,19 +23,21 @@ large_data.columns = large_data.columns.str.upper()
 phylogroup_data = pd.read_csv("accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
 
 data_without_lineage = large_data.drop(index=['Lineage'])
-merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')
+merged_df = data_without_lineage.transpose().merge(phylogroup_data, how='left', left_index=True, right_index=True)
+merged_df['Phylogroup'] = merged_df['Phylogroup'].fillna('Not determined')
+print(merged_df['Phylogroup'].value_counts())
 
-numeric_cols = merged_df.select_dtypes(include='number')
-column_sums = numeric_cols.sum(axis=0)
+# numeric_cols = merged_df.select_dtypes(include='number')
+# column_sums = numeric_cols.sum(axis=0)
 
-filtered_columns = column_sums[column_sums / 7512 >= 0.05].index
-filtered_data = merged_df[filtered_columns]
+# filtered_columns = column_sums[column_sums / 7512 >= 0.05].index
+# filtered_data = merged_df[filtered_columns]
 
-filtered_data = merged_df[filtered_columns].copy()
-filtered_data['Phylogroup'] = merged_df['Phylogroup']
+# filtered_data = merged_df[filtered_columns].copy()
+# filtered_data['Phylogroup'] = merged_df['Phylogroup']
 
-data_array_t = np.array(filtered_data.iloc[:, :-1])
-phylogroups_array = np.array(filtered_data.iloc[:, -1])
+data_array_t = np.array(merged_df.iloc[:, :-1])
+phylogroups_array = np.array(merged_df.iloc[:, -1])
 
 print(f"Dataset shape: {data_array_t.shape}")
 print(f"Phylogroups array shape: {phylogroups_array.shape}")
@@ -68,9 +70,11 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
 ## Preping model inputs
 print("PREPPING MODEL INPUTS...")
+# best hyperparams
+# hidden_dim=1024, latent_dim=64, learning_rate=0.001
 # Model inputs 
-hidden_dim = 512
-latent_dim = 32
+hidden_dim = 1024
+latent_dim = 64
 beta_start = 0.1
 beta_end = 1.0
 n_epochs = 100
@@ -161,12 +165,13 @@ name = folder+"tsne_latent_space_visualisation_BD_100_AHPT.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)
-df_tsne = pd.DataFrame(tsne_latents, columns=['PC1', 'PC2'])
-print(f"len tsne latents: {len(tsne_latents)}")
-print(f"len test phylogroups: {len(test_phylogroups)}")
+df_tsne = pd.DataFrame(tsne_latents, columns=['TSNE1', 'TSNE2'])
+# print(f"len tsne latents: {len(tsne_latents)}")
+# print(f"len test phylogroups: {len(test_phylogroups)}")
 df_tsne['phylogroup'] = test_phylogroups
+
 plt.figure(figsize=(10, 10))
-sns.scatterplot(x='PC1', y='PC2', hue = df_tsne['phylogroup'], data=df_tsne)
+sns.scatterplot(x='TSNE1', y='TSNE2', hue = df_tsne['phylogroup'], data=df_tsne)
 plt.savefig(name, format="pdf", bbox_inches="tight")
 plt.show()
 
@@ -174,16 +179,17 @@ plt.show()
 name = folder+"pca_latent_space_visualisation_BD_100_AHPT.pdf"
 # do_pca(n_components=2, latents=latents, fig_name=name)
 # Apply PCA
-pca = PCA(n_components=2)
-pca_latents = pca.fit_transform(latents)
-df_pca = pd.DataFrame(pca_latents, columns=['PC1', 'PC2'])
+latents = get_latent_variables(model, test_loader, device)
+pca = PCA(n_components=3)
+data_pca = pca.fit_transform(latents)
+df_pca = pd.DataFrame(data_pca, columns=['PC1', 'PC2', 'PC3'])
 df_pca['phylogroup'] = test_phylogroups
-plt.figure(figsize=(10, 10))
-sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'], data=df_pca)
-plt.savefig(name, format="pdf", bbox_inches="tight")
-plt.show()
 
-print("\n** MAIN SCRIPT IS DONE **")
+fig, axes = plt.subplots(1, 2, figsize=(20, 10))
+plt.figure(figsize=(10, 10))
+sns.scatterplot(x='PC1', y='PC2', hue = test_phylogroups, data=df_pca, ax=axes[0])
+sns.scatterplot(x='PC2', y='PC3', hue = test_phylogroups, data=df_pca, ax=axes[1])
+plt.show()
 
 # print("\nHyperparameter tuning")
 # # Gridsearch
