@@ -1,3 +1,5 @@
 models
 data
 __pycache__
+blast_results.xml
+genome_assessment.py
