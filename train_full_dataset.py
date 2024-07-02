@@ -155,11 +155,10 @@ plt.ylabel("Frequency")
 plt.savefig(folder+"accuracy_score_frequency_test_set_100_AHPT.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
-## Exploring latent space
+# ## Exploring latent space
 print("EXPLORING THE LATENT SPACE...")
 # Get latent variables
 latents = get_latent_variables(model, test_loader, device)
-
 # Apply t-SNE for dimensionality reduction
 name = folder+"tsne_latent_space_visualisation_BD_100_AHPT.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
@@ -176,19 +175,17 @@ plt.savefig(name, format="pdf", bbox_inches="tight")
 plt.show()
 
 # Apply PCA
-name = folder+"pca_latent_space_visualisation_BD_100_AHPT.pdf"
-# do_pca(n_components=2, latents=latents, fig_name=name)
-# Apply PCA
 latents = get_latent_variables(model, test_loader, device)
 pca = PCA(n_components=3)
 data_pca = pca.fit_transform(latents)
 df_pca = pd.DataFrame(data_pca, columns=['PC1', 'PC2', 'PC3'])
 df_pca['phylogroup'] = test_phylogroups
-
+print(df_pca.head())
 fig, axes = plt.subplots(1, 2, figsize=(20, 10))
-plt.figure(figsize=(10, 10))
-sns.scatterplot(x='PC1', y='PC2', hue = test_phylogroups, data=df_pca, ax=axes[0])
-sns.scatterplot(x='PC2', y='PC3', hue = test_phylogroups, data=df_pca, ax=axes[1])
+# plt.figure(figsize=(10, 10))
+sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[0])
+sns.scatterplot(x='PC2', y='PC3', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[1])
+plt.savefig(folder+"pca_latent_space_test_set_100_AHPT.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # print("\nHyperparameter tuning")
