@@ -7,6 +7,9 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+def VAE_loss_extra():
+    return 0 
+
 # Function to extract latent variables
 def get_latent_variables(model, data_loader, device):
     model.eval()
@@ -51,21 +54,3 @@ def plot_loss_vs_epochs_graph(epochs, train_loss_vals, val_loss_vals, fig_name):
     plt.legend()
     plt.savefig(fig_name, format="pdf", bbox_inches="tight")
     plt.show()
-
-def custom_genome_length_group(length):
-    if length <= 4500:
-        return 'GS <= 4500 genes'
-    # elif 4200 < length <= 4300:
-    #     return '4200 < GS <= 4300 genes'
-    # elif 4300 < length <= 4400:
-    #     return '4300 < GS <= 4400 genes'
-    # elif 4400 < length <= 4500:
-    #     return '4400 < GS <= 4500 genes'
-    # elif 4500 < length <= 4600:
-    #     return '4500 < GS <= 4600 genes'
-    # elif 4600 < length <= 4700:
-    #     return '4600 < GS <= 4700 genes'
-    elif length > 5000:
-        return 'GS > 5000 genes'
-    else: 
-        return '500 < GS < 5000 genes'
