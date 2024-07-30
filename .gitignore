@@ -1,6 +1,10 @@
 models
 data
+small_dataset
 __pycache__
 blast_results.xml
 genome_assessment.py
 VAE_MoG_model.py
+VAE_model_single.py
+VAE_model_2.py
+phylogroups_processing.sh
