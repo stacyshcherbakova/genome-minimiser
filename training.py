@@ -657,7 +657,7 @@ def train_cyclic_KL_annealing_additional_loss(model, optimizer, scheduler, n_epo
 
                 gene_abundance = recon_x.sum(axis=0)
                 gene_abundance_loss = torch.sum(torch.abs(gene_abundance)) 
-
+                # both gene abundance nad gene size are the same in this case 
                 # genome_size = recon_x.sum(axis=1)
                 # genome_size_loss = torch.sum(torch.abs(genome_size)) 
 
