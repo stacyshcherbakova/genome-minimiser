@@ -27,29 +27,30 @@ directory = '/home/stacys/data/plasmid_sequences'
 sequences = []
 plasmid_ids = []
 
+unwanted_letters = set('-DKMNRSVWY')
+
 for filename in os.listdir(directory):
     if filename.endswith('.txt'):
         plasmid_id = filename.split('.')[0]
 
         if plasmid_id != 'downloaded_plasmids' and plasmid_id != 'last_processed_page':
-            plasmid_ids.append(plasmid_id)
-        
             with open(os.path.join(directory, filename), 'r') as file:
                 sequence = ''
 
                 for line in file:
-
                     if line.startswith('>'):
                         continue
                     sequence += line.strip().upper()
-                sequences.append(sequence)
+
+                if not any(letter in sequence for letter in unwanted_letters):
+                    sequences.append(sequence)
+                    plasmid_ids.append(plasmid_id)
 
 sequences_array = np.array(sequences, dtype=object)
 plasmid_ids_array = np.array(plasmid_ids).astype(int)
 
-np.save('all_sequences.npy', sequences_array)
-np.save('plasmid_ids.npy', plasmid_ids_array)
-
+np.save('cleaned_sequences.npy', sequences_array)
+np.save('cleaned_plasmid_ids.npy', plasmid_ids_array)
 
 # Check the ditribution of sequence lengths
 # sequences = np.load('/home/stacys/src/masters_project/plasmids/1_data_scrapping/all_sequences.npy', allow_pickle=True)
