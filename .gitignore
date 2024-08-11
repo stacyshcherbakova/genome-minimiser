@@ -8,3 +8,7 @@ VAE_MoG_model.py
 VAE_model_single.py
 VAE_model_2.py
 phylogroups_processing.sh
+downloaded_plasmids.txt
+plasmid_metadata.csv
+FI_GAN_training_kmer_tok.py
+DNAGPT_model.py
