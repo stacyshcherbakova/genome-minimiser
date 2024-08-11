@@ -1,4 +1,3 @@
-# Used libraries
 import torch.nn as nn
 import torch 
 import numpy as np
@@ -6,7 +5,39 @@ import matplotlib.pyplot as plt
 from extras import *
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+# The following fucntions are modified versions of traning loops, eahc using a different techniques
+# All parameters wioll be described here to avoid repetition
+# Each function will have more details described in the docstring 
+# Parameters:
+# ----------
+# model - The neural network model to be trained
+# optimizer - The optimizer used to update model parameters
+# scheduler - The learning rate scheduler
+# n_epochs - The number of training epochs
+# train_loader - DataLoader for the training dataset
+# val_loader - DataLoader for the validation dataset
+# min_beta - Minimum value for the beta parameter in the cyclic annealing schedule
+# max_beta - Maximum value for the beta parameter in the cyclic annealing schedule
+# gamma_gene_abundance_start - Initial value of the scaling factor for the gene abundance loss
+# gamma_gene_abundance_end - Final value of the scaling factor for the gene abundance loss
+# gamma_genome_size_start - Initial value of the scaling factor for the genome size loss
+# gamma_genome_size_end - Final value of the scaling factor for the genome size loss
+# max_norm - Maximum norm for gradient clipping
+# lambda_l1 - Regularization strength parameter for L1 regularization
+
+# Returns:
+# -------
+# train_loss_vals - List of average training losses for each epoch
+# val_loss_vals - List of average validation losses for each epoch
+# epoch + 1 - The number of completed epochs, including early stopping if triggered
+# and the graphs that were produced during the training as pdf files 
+
 def train_cyclic_KL_annealing_additional_loss_SCALED(model, optimizer, scheduler, n_epochs, train_loader, val_loader, min_beta, max_beta, gamma_gene_abundance_start, gamma_gene_abundance_end, gamma_genome_size_start, gamma_genome_size_end, max_norm, lambda_l1):
+    '''
+    Training function for a VAE model which uses linear KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance AND genome size which use linear annealing wiht different coefficients 
+
+    '''
+
     folder = "15_genome_size_and_cyclic_annealing_SCALED/"
     train_loss_vals = []
     val_loss_vals = []
@@ -247,8 +278,12 @@ def train_cyclic_KL_annealing_additional_loss_SCALED(model, optimizer, scheduler
 
     return train_loss_vals, val_loss_vals, epoch + 1
 
-# Function used to train the model with KL annealing two additional additional loss terms which penalises model for generating larger genomes 
 def train_KL_annealing_additional_loss_2(model, optimizer, scheduler, n_epochs, train_loader, val_loader, beta_start, beta_end, gamma_start, gamma_end, max_norm, lambda_l1):
+    '''
+    Training function for a VAE model which uses linear KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance AND GENOME SIZE which follow linear annealing (in reality absolute value of all genes in the dataset * 2)
+
+    '''
+
     train_loss_vals = []
     val_loss_vals = []
     train_loss = 0.0
@@ -351,8 +386,12 @@ def train_KL_annealing_additional_loss_2(model, optimizer, scheduler, n_epochs, 
 
     return train_loss_vals, val_loss_vals, epoch + 1
 
-# FUnction cycllic annealing _= genomes size
 def train_cyclic_KL_annealing_additional_loss_2(model, optimizer, scheduler, n_epochs, train_loader, val_loader, min_beta, max_beta, gamma_start, gamma_end, max_norm, lambda_l1):
+    '''
+    Training function for a VAE model which uses cyclic KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance AND GENOME SIZE which follow linear annealing (in reality absolute value of all genes in the dataset * 2)
+
+    '''
+
     folder = "14_genome_size_and_cyclic_annealing/"
     train_loss_vals = []
     val_loss_vals = []
@@ -547,10 +586,12 @@ def train_cyclic_KL_annealing_additional_loss_2(model, optimizer, scheduler, n_e
 
     return train_loss_vals, val_loss_vals, epoch + 1
 
-
-
-# Function used to train the model with KL annealing and additional loss term which penalises model for generating larger genomes 
 def train_cyclic_KL_annealing_additional_loss(model, optimizer, scheduler, n_epochs, train_loader, val_loader, min_beta, max_beta, gamma_start, gamma_end, max_norm, lambda_l1):
+    '''
+    Training function for a VAE model which uses cyclic KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance which follows linear annealing (technically absolute value of all genes in the dataset)
+
+    '''
+
     train_loss_vals = []
     val_loss_vals = []
     train_loss = 0.0
@@ -616,7 +657,7 @@ def train_cyclic_KL_annealing_additional_loss(model, optimizer, scheduler, n_epo
 
                 gene_abundance = recon_x.sum(axis=0)
                 gene_abundance_loss = torch.sum(torch.abs(gene_abundance)) 
-
+                # both gene abundance nad gene size are the same in this case 
                 # genome_size = recon_x.sum(axis=1)
                 # genome_size_loss = torch.sum(torch.abs(genome_size)) 
 
@@ -660,9 +701,12 @@ def train_cyclic_KL_annealing_additional_loss(model, optimizer, scheduler, n_epo
 
     return train_loss_vals, val_loss_vals, epoch + 1
 
-
-# Function used to train the model with KL annealing and additional loss term which penalises model for generating larger genomes 
 def train_KL_annealing_additional_loss(model, optimizer, scheduler, n_epochs, train_loader, val_loader, beta_start, beta_end, gamma_start, gamma_end, max_norm, lambda_l1):
+    '''
+    Training function for a VAE model which uses linear KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance (technically absolute value of all genes in the dataset)
+
+    '''
+
     train_loss_vals = []
     val_loss_vals = []
     train_loss = 0.0
@@ -765,10 +809,12 @@ def train_KL_annealing_additional_loss(model, optimizer, scheduler, n_epochs, tr
 
     return train_loss_vals, val_loss_vals, epoch + 1
 
-
-
-# Function used to train the model with no KL annealing
 def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, val_loader, beta_start, beta_end, max_norm):
+    '''
+    basic trining function for VAE with linear KL annealing, gradient clipping  and early stoppping implemented 
+
+    '''
+
     # global train_loss_vals 
     # train_loss_vals = []
     # global train_loss_vals2 
@@ -888,9 +934,12 @@ def train_with_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader,
 
     return train_loss_vals2, val_loss_vals, epoch + 1
 
-
-# Function used to train the model with KL annealing
 def train_no_KL_annelaing(model, optimizer, scheduler, n_epochs, train_loader, val_loader, max_norm):
+    '''
+    Basic training function for VAE with gradient clipping implemented 
+
+    '''
+
     # global train_loss_vals 
     train_loss_vals = []
     # global train_loss_vals2 
