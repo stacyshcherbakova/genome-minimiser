@@ -76,7 +76,7 @@ def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_n
 
     plt.figure(figsize=(10,10))
     plt.hist(essential_genes_count_per_sample, bins=10, color=plot_color)
-    plt.xlabel('Genome size')
+    plt.xlabel('Essential genes number')
     plt.ylabel('Frequency')
 
     plt.axvline(mean, color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}')
