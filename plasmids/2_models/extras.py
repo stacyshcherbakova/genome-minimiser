@@ -5,6 +5,9 @@ from typing import List, Dict
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
 class Dataset_Prep(Dataset):
     def __init__(self, encoded_sequences, max_len):
         self.max_len = max_len
@@ -63,7 +66,73 @@ class KMerTokenizer():
     def indices_to_sequence(self, indices):
         inv_vocab = {idx: k_mer for k_mer, idx in self.vocab.items()}
         return [''.join([inv_vocab[idx] for idx in index_list]) for index_list in indices]
-    
+
+def train_generator(fake_data, discriminator, optimizer_g, criterion):
+    optimizer_g.zero_grad()
+
+    labels = torch.ones(fake_data.size(0), 1).to(device)
+    outputs = discriminator(fake_data)
+    g_loss = criterion(outputs, labels)
+
+    g_loss.backward()
+    optimizer_g.step()
+
+    return g_loss.item()
+
+def train_generator_2(fake_data, critic, optimizer_g):
+    optimizer_g.zero_grad()
+
+    outputs = critic(fake_data)
+
+    g_loss = -torch.mean(outputs)
+
+    g_loss.backward()
+    optimizer_g.step()
+
+    return g_loss.item()
+
+def train_critic(real_data, fake_data, optimizer_d, critic, clip_value):
+    optimizer_d.zero_grad()
+
+    real_outputs = critic(real_data)
+    fake_outputs = critic(fake_data.detach())
+
+    d_loss = -torch.mean(real_outputs) + torch.mean(fake_outputs)
+    d_loss.backward()
+    optimizer_d.step()
+
+    for p in critic.parameters():
+        p.data.clamp_(-clip_value, clip_value)
+
+    # Calculate accuracy
+    real_real_score = torch.mean((real_outputs > 0).float()).item()
+    fake_real_score = torch.mean((fake_outputs < 0).float()).item()
+
+    return d_loss.item(), real_real_score, fake_real_score
+
+
+def train_discriminator(real_data, fake_data, discriminator, optimizer_d, criterion):
+    optimizer_d.zero_grad()
+
+    real_labels = torch.ones(real_data.size(0), 1).to(device)
+    fake_labels = torch.zeros(fake_data.size(0), 1).to(device)
+
+    real_outputs = discriminator(real_data)
+    d_loss_real = criterion(real_outputs, real_labels)
+    real_predictions = (real_outputs >= 0.5).float()
+    real_accuracy = (real_predictions == real_labels).float().mean().item()
+
+    fake_outputs = discriminator(fake_data.detach())
+    d_loss_fake = criterion(fake_outputs, fake_labels)
+    fake_predictions = (fake_outputs < 0.5).float()
+    fake_accuracy = (fake_predictions == fake_labels).float().mean().item()
+
+    d_loss = d_loss_real + d_loss_fake
+    d_loss.backward()
+    optimizer_d.step()
+
+    return d_loss.item(), real_accuracy, fake_accuracy
+
 def one_hot_encode_sequences(sequences, vocab_size):
     if sequences.max() >= vocab_size:
         raise ValueError(f"Found index {sequences.max()} in sequences which is out of bounds for vocab_size {vocab_size}")

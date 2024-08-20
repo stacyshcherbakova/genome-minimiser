@@ -28,10 +28,12 @@ class Discriminator(nn.Module):
         self.model = nn.Sequential(
             nn.Linear(input_size, 128),
             nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
             nn.Linear(128, 256),
             nn.LeakyReLU(0.2),
             nn.Linear(256, 128),
             nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
             nn.Linear(128, 1),
             nn.Sigmoid()
         )
@@ -40,6 +42,25 @@ class Discriminator(nn.Module):
         x = self.model(x)
         return x
     
+class Critic(nn.Module):
+    def __init__(self, input_size):
+        super(Critic, self).__init__()
+        self.model = nn.Sequential(
+            nn.Linear(input_size, 128),
+            nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
+            nn.Linear(128, 256),
+            nn.LeakyReLU(0.2),
+            nn.Linear(256, 128),
+            nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
+            nn.Linear(128, 1) 
+        )
+
+    def forward(self, x):
+        x = self.model(x)
+        return x
+
 class Conv_Discriminator(nn.Module):
     def __init__(self, max_length, vocab_size):
         super(Conv_Discriminator, self).__init__()
