@@ -4,9 +4,14 @@ import numpy as np
 import pandas as pd
 import re
 
-# Example plasmid_ids.npy file loading
-plasmid_ids = np.array([42876, 40786])  # Replace with your npy file path
+plasmid_ids = np.array([42876, 40786]) 
 # plasmid_ids = np.load('path_to_your_plasmid_ids.npy')
+
+def clean_text(text):
+    """
+    Cleans the text by removing excess whitespace, line breaks, and tabs.
+    """
+    return re.sub(r'\s+', ' ', text).strip()
 
 def fetch_plasmid_metadata(plasmid_id):
     url = f"https://www.addgene.org/{plasmid_id}/"
@@ -35,44 +40,55 @@ def fetch_plasmid_metadata(plasmid_id):
         purpose_items = purpose_section.find_all('li')
         for item in purpose_items:
             if 'Purpose' in item.text:
-                metadata["Purpose"] = re.sub(r'\s+', ' ', item.get_text(separator=" ", strip=True)).replace("(How to cite)", "").strip()
+                metadata["Purpose"] = clean_text(item.get_text(separator=" ", strip=True)).replace("(How to cite)", "").strip()
             if 'Depositing Lab' in item.text:
-                metadata["Depositing Lab"] = re.sub(r'\s+', ' ', item.get_text(separator=" ", strip=True)).replace("(How to cite)", "").strip()
+                metadata["Depositing Lab"] = clean_text(item.get_text(separator=" ", strip=True)).replace("(How to cite)", "").strip()
     
     # Extracting Publication
     publication_section = soup.find('div', class_='field-label', string='Publication')
     if publication_section:
-        pub_elem = publication_section.find_next_sibling('div', class_='field-item')
+        pub_elem = publication_section.find_next_sibling('div', class_='field-content')
         if pub_elem:
-            metadata["Publication"] = re.sub(r'\s+', ' ', pub_elem.get_text(strip=True)).replace("(How to cite)", "").strip()
+            pub_link = pub_elem.find('a')
+            if pub_link:
+                metadata["Publication"] = clean_text(pub_link.get_text(strip=True)).replace("(How to cite)", "").strip()
     
-    # Extracting Backbone
+    # Extracting Backbone Information and combining into one field
     backbone_section = soup.find('h2', string='Backbone')
+    backbone_details = []
     if backbone_section:
-        backbone_text = backbone_section.find_next('p').get_text(strip=True)
-        metadata["Backbone"] = re.sub(r'\s+', ' ', backbone_text).replace("(How to cite)", "").strip()
+        ul_section = backbone_section.find_next('ul')
+        if ul_section:
+            li_items = ul_section.find_all('li')
+            for li in li_items:
+                li_text = clean_text(li.get_text(separator=" ", strip=True))
+                backbone_details.append(li_text)
     
-    # Extracting Gene/Insert
-    gene_insert_section = soup.find('h2', string='Gene/Insert')
-    if gene_insert_section:
-        gene_insert_text = gene_insert_section.find_next('p').get_text(strip=True)
-        metadata["Gene/Insert"] = re.sub(r'\s+', ' ', gene_insert_text).replace("(How to cite)", "").strip()
+    if backbone_details:
+        metadata["Backbone"] = "; ".join(backbone_details)
     
-    # Extracting Growth in Bacteria
-    growth_section = soup.find('h2', string='Growth in Bacteria')
-    if growth_section:
-        growth_text = growth_section.find_next('p').get_text(strip=True)
-        metadata["Growth in Bacteria"] = re.sub(r'\s+', ' ', growth_text).replace("(How to cite)", "").strip()
+    # Extracting Gene/Insert, Growth in Bacteria, Cloning Information and combining into their respective fields
+    sections = {
+        "Gene/Insert": [],
+        "Growth in Bacteria": [],
+        "Cloning Information": []
+    }
     
-    # Extracting Cloning Information
-    cloning_info_section = soup.find('h2', string='Cloning Information')
-    if cloning_info_section:
-        cloning_info_text = cloning_info_section.find_next('p').get_text(strip=True)
-        metadata["Cloning Information"] = re.sub(r'\s+', ' ', cloning_info_text).replace("(How to cite)", "").strip()
+    for section_name, details_list in sections.items():
+        section_header = soup.find('h2', string=section_name)
+        if section_header:
+            ul_section = section_header.find_next('ul')
+            if ul_section:
+                li_items = ul_section.find_all('li')
+                for li in li_items:
+                    li_text = clean_text(li.get_text(separator=" ", strip=True))
+                    details_list.append(li_text)
+        
+        if details_list:
+            metadata[section_name] = "; ".join(details_list)
     
     return metadata
 
-# Collect metadata for all plasmids
 plasmid_metadata_list = []
 
 for plasmid_id in plasmid_ids:
@@ -80,13 +96,7 @@ for plasmid_id in plasmid_ids:
     if metadata:
         plasmid_metadata_list.append(metadata)
 
-# Convert to DataFrame and display
 df = pd.DataFrame(plasmid_metadata_list)
-
-# Display dataframe
-print(df)
-
-# Save the dataframe to a CSV file (optional)
 df.to_csv('plasmid_metadata.csv', index=False)
 
-print("Metadata collection complete. Data saved to plasmid_metadata.csv.")
+print("Metadata collection complete.")

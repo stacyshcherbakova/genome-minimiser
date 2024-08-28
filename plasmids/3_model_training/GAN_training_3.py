@@ -98,7 +98,7 @@ def main():
     num_epochs = 100 
     noise_dim = 600
     hidden_dim = 128
-    num_layers = 2
+    num_layers = 5
     fig_name = "lstm"
 
     # Tokenization and dataset preparation
