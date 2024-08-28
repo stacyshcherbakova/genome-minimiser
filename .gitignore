@@ -15,7 +15,6 @@ DNAGPT_model.py
 main_large_cut_down_dataset.ipynb
 main_large_cut_down_dataset.ipynb
 gene_annotation.ipynb
-VAE_model_single.py
-VAE_model_2.py
 GAN_training_2.py
 GAN_training_4.py
+5_DNAGPT_as_gen
