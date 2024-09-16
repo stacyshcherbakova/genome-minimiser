@@ -1,0 +1,1183 @@
+2024-09-13 15:52:31,734 - INFO - Attempting to load wildtype genome from /Users/anastasiiashcherbakova/git_projects/masters_project/data/sequence.gb
+2024-09-13 15:52:32,524 - INFO - Successfully loaded genome from /Users/anastasiiashcherbakova/git_projects/masters_project/data/sequence.gb
+2024-09-13 15:52:32,524 - INFO - Attempting to genes file from /Users/anastasiiashcherbakova/git_projects/masters_project/data/cleaned_genes_lists.npy
+2024-09-13 15:52:32,543 - INFO - Successfully loaded gene file from /Users/anastasiiashcherbakova/git_projects/masters_project/data/cleaned_genes_lists.npy
+2024-09-13 15:52:32,719 - DEBUG - Non-non essential genes have been found in sequence no. 1.
+2024-09-13 15:52:32,898 - DEBUG - BP positions to remove have been found in sequence no. 1.
+2024-09-13 15:52:34,214 - DEBUG - Minimised sequence for sequence no. 1 has been created.
+2024-09-13 15:52:34,222 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_1.fasta
+2024-09-13 15:52:34,389 - DEBUG - Non-non essential genes have been found in sequence no. 2.
+2024-09-13 15:52:34,558 - DEBUG - BP positions to remove have been found in sequence no. 2.
+2024-09-13 15:52:35,866 - DEBUG - Minimised sequence for sequence no. 2 has been created.
+2024-09-13 15:52:35,893 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_2.fasta
+2024-09-13 15:52:36,066 - DEBUG - Non-non essential genes have been found in sequence no. 3.
+2024-09-13 15:52:36,197 - DEBUG - BP positions to remove have been found in sequence no. 3.
+2024-09-13 15:52:37,502 - DEBUG - Minimised sequence for sequence no. 3 has been created.
+2024-09-13 15:52:37,531 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_3.fasta
+2024-09-13 15:52:37,704 - DEBUG - Non-non essential genes have been found in sequence no. 4.
+2024-09-13 15:52:37,824 - DEBUG - BP positions to remove have been found in sequence no. 4.
+2024-09-13 15:52:39,107 - DEBUG - Minimised sequence for sequence no. 4 has been created.
+2024-09-13 15:52:39,135 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_4.fasta
+2024-09-13 15:52:39,300 - DEBUG - Non-non essential genes have been found in sequence no. 5.
+2024-09-13 15:52:39,422 - DEBUG - BP positions to remove have been found in sequence no. 5.
+2024-09-13 15:52:40,709 - DEBUG - Minimised sequence for sequence no. 5 has been created.
+2024-09-13 15:52:40,736 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_5.fasta
+2024-09-13 15:52:40,906 - DEBUG - Non-non essential genes have been found in sequence no. 6.
+2024-09-13 15:52:41,041 - DEBUG - BP positions to remove have been found in sequence no. 6.
+2024-09-13 15:52:42,345 - DEBUG - Minimised sequence for sequence no. 6 has been created.
+2024-09-13 15:52:42,376 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_6.fasta
+2024-09-13 15:52:42,547 - DEBUG - Non-non essential genes have been found in sequence no. 7.
+2024-09-13 15:52:42,681 - DEBUG - BP positions to remove have been found in sequence no. 7.
+2024-09-13 15:52:44,338 - DEBUG - Minimised sequence for sequence no. 7 has been created.
+2024-09-13 15:52:44,384 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_7.fasta
+2024-09-13 15:52:44,578 - DEBUG - Non-non essential genes have been found in sequence no. 8.
+2024-09-13 15:52:44,698 - DEBUG - BP positions to remove have been found in sequence no. 8.
+2024-09-13 15:52:46,012 - DEBUG - Minimised sequence for sequence no. 8 has been created.
+2024-09-13 15:52:46,043 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_8.fasta
+2024-09-13 15:52:46,213 - DEBUG - Non-non essential genes have been found in sequence no. 9.
+2024-09-13 15:52:46,330 - DEBUG - BP positions to remove have been found in sequence no. 9.
+2024-09-13 15:52:47,621 - DEBUG - Minimised sequence for sequence no. 9 has been created.
+2024-09-13 15:52:47,652 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_9.fasta
+2024-09-13 15:52:47,840 - DEBUG - Non-non essential genes have been found in sequence no. 10.
+2024-09-13 15:52:47,961 - DEBUG - BP positions to remove have been found in sequence no. 10.
+2024-09-13 15:52:49,498 - DEBUG - Minimised sequence for sequence no. 10 has been created.
+2024-09-13 15:52:49,526 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_10.fasta
+2024-09-13 15:52:49,695 - DEBUG - Non-non essential genes have been found in sequence no. 11.
+2024-09-13 15:52:49,833 - DEBUG - BP positions to remove have been found in sequence no. 11.
+2024-09-13 15:52:51,108 - DEBUG - Minimised sequence for sequence no. 11 has been created.
+2024-09-13 15:52:51,135 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_11.fasta
+2024-09-13 15:52:51,300 - DEBUG - Non-non essential genes have been found in sequence no. 12.
+2024-09-13 15:52:51,628 - DEBUG - BP positions to remove have been found in sequence no. 12.
+2024-09-13 15:52:53,015 - DEBUG - Minimised sequence for sequence no. 12 has been created.
+2024-09-13 15:52:53,057 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_12.fasta
+2024-09-13 15:52:53,228 - DEBUG - Non-non essential genes have been found in sequence no. 13.
+2024-09-13 15:52:53,345 - DEBUG - BP positions to remove have been found in sequence no. 13.
+2024-09-13 15:52:54,617 - DEBUG - Minimised sequence for sequence no. 13 has been created.
+2024-09-13 15:52:54,644 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_13.fasta
+2024-09-13 15:52:54,812 - DEBUG - Non-non essential genes have been found in sequence no. 14.
+2024-09-13 15:52:54,952 - DEBUG - BP positions to remove have been found in sequence no. 14.
+2024-09-13 15:52:56,300 - DEBUG - Minimised sequence for sequence no. 14 has been created.
+2024-09-13 15:52:56,333 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_14.fasta
+2024-09-13 15:52:56,620 - DEBUG - Non-non essential genes have been found in sequence no. 15.
+2024-09-13 15:52:56,737 - DEBUG - BP positions to remove have been found in sequence no. 15.
+2024-09-13 15:52:58,035 - DEBUG - Minimised sequence for sequence no. 15 has been created.
+2024-09-13 15:52:58,064 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_15.fasta
+2024-09-13 15:52:58,234 - DEBUG - Non-non essential genes have been found in sequence no. 16.
+2024-09-13 15:52:58,349 - DEBUG - BP positions to remove have been found in sequence no. 16.
+2024-09-13 15:52:59,687 - DEBUG - Minimised sequence for sequence no. 16 has been created.
+2024-09-13 15:52:59,715 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_16.fasta
+2024-09-13 15:52:59,884 - DEBUG - Non-non essential genes have been found in sequence no. 17.
+2024-09-13 15:53:00,012 - DEBUG - BP positions to remove have been found in sequence no. 17.
+2024-09-13 15:53:01,319 - DEBUG - Minimised sequence for sequence no. 17 has been created.
+2024-09-13 15:53:01,347 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_17.fasta
+2024-09-13 15:53:01,518 - DEBUG - Non-non essential genes have been found in sequence no. 18.
+2024-09-13 15:53:01,638 - DEBUG - BP positions to remove have been found in sequence no. 18.
+2024-09-13 15:53:02,927 - DEBUG - Minimised sequence for sequence no. 18 has been created.
+2024-09-13 15:53:02,955 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_18.fasta
+2024-09-13 15:53:03,124 - DEBUG - Non-non essential genes have been found in sequence no. 19.
+2024-09-13 15:53:03,241 - DEBUG - BP positions to remove have been found in sequence no. 19.
+2024-09-13 15:53:04,603 - DEBUG - Minimised sequence for sequence no. 19 has been created.
+2024-09-13 15:53:04,629 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_19.fasta
+2024-09-13 15:53:04,800 - DEBUG - Non-non essential genes have been found in sequence no. 20.
+2024-09-13 15:53:04,921 - DEBUG - BP positions to remove have been found in sequence no. 20.
+2024-09-13 15:53:06,241 - DEBUG - Minimised sequence for sequence no. 20 has been created.
+2024-09-13 15:53:06,268 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_20.fasta
+2024-09-13 15:53:06,431 - DEBUG - Non-non essential genes have been found in sequence no. 21.
+2024-09-13 15:53:06,549 - DEBUG - BP positions to remove have been found in sequence no. 21.
+2024-09-13 15:53:07,898 - DEBUG - Minimised sequence for sequence no. 21 has been created.
+2024-09-13 15:53:07,932 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_21.fasta
+2024-09-13 15:53:08,097 - DEBUG - Non-non essential genes have been found in sequence no. 22.
+2024-09-13 15:53:08,210 - DEBUG - BP positions to remove have been found in sequence no. 22.
+2024-09-13 15:53:09,506 - DEBUG - Minimised sequence for sequence no. 22 has been created.
+2024-09-13 15:53:09,533 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_22.fasta
+2024-09-13 15:53:09,702 - DEBUG - Non-non essential genes have been found in sequence no. 23.
+2024-09-13 15:53:09,820 - DEBUG - BP positions to remove have been found in sequence no. 23.
+2024-09-13 15:53:11,100 - DEBUG - Minimised sequence for sequence no. 23 has been created.
+2024-09-13 15:53:11,127 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_23.fasta
+2024-09-13 15:53:11,293 - DEBUG - Non-non essential genes have been found in sequence no. 24.
+2024-09-13 15:53:11,413 - DEBUG - BP positions to remove have been found in sequence no. 24.
+2024-09-13 15:53:12,707 - DEBUG - Minimised sequence for sequence no. 24 has been created.
+2024-09-13 15:53:12,733 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_24.fasta
+2024-09-13 15:53:12,897 - DEBUG - Non-non essential genes have been found in sequence no. 25.
+2024-09-13 15:53:13,025 - DEBUG - BP positions to remove have been found in sequence no. 25.
+2024-09-13 15:53:14,400 - DEBUG - Minimised sequence for sequence no. 25 has been created.
+2024-09-13 15:53:14,426 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_25.fasta
+2024-09-13 15:53:14,590 - DEBUG - Non-non essential genes have been found in sequence no. 26.
+2024-09-13 15:53:14,691 - DEBUG - BP positions to remove have been found in sequence no. 26.
+2024-09-13 15:53:15,986 - DEBUG - Minimised sequence for sequence no. 26 has been created.
+2024-09-13 15:53:16,013 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_26.fasta
+2024-09-13 15:53:16,180 - DEBUG - Non-non essential genes have been found in sequence no. 27.
+2024-09-13 15:53:16,288 - DEBUG - BP positions to remove have been found in sequence no. 27.
+2024-09-13 15:53:17,569 - DEBUG - Minimised sequence for sequence no. 27 has been created.
+2024-09-13 15:53:17,598 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_27.fasta
+2024-09-13 15:53:17,767 - DEBUG - Non-non essential genes have been found in sequence no. 28.
+2024-09-13 15:53:17,870 - DEBUG - BP positions to remove have been found in sequence no. 28.
+2024-09-13 15:53:19,149 - DEBUG - Minimised sequence for sequence no. 28 has been created.
+2024-09-13 15:53:19,175 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_28.fasta
+2024-09-13 15:53:19,377 - DEBUG - Non-non essential genes have been found in sequence no. 29.
+2024-09-13 15:53:19,587 - DEBUG - BP positions to remove have been found in sequence no. 29.
+2024-09-13 15:53:20,958 - DEBUG - Minimised sequence for sequence no. 29 has been created.
+2024-09-13 15:53:21,000 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_29.fasta
+2024-09-13 15:53:21,204 - DEBUG - Non-non essential genes have been found in sequence no. 30.
+2024-09-13 15:53:21,328 - DEBUG - BP positions to remove have been found in sequence no. 30.
+2024-09-13 15:53:22,682 - DEBUG - Minimised sequence for sequence no. 30 has been created.
+2024-09-13 15:53:22,710 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_30.fasta
+2024-09-13 15:53:22,883 - DEBUG - Non-non essential genes have been found in sequence no. 31.
+2024-09-13 15:53:22,994 - DEBUG - BP positions to remove have been found in sequence no. 31.
+2024-09-13 15:53:24,315 - DEBUG - Minimised sequence for sequence no. 31 has been created.
+2024-09-13 15:53:24,340 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_31.fasta
+2024-09-13 15:53:24,532 - DEBUG - Non-non essential genes have been found in sequence no. 32.
+2024-09-13 15:53:24,645 - DEBUG - BP positions to remove have been found in sequence no. 32.
+2024-09-13 15:53:25,984 - DEBUG - Minimised sequence for sequence no. 32 has been created.
+2024-09-13 15:53:26,011 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_32.fasta
+2024-09-13 15:53:26,182 - DEBUG - Non-non essential genes have been found in sequence no. 33.
+2024-09-13 15:53:26,290 - DEBUG - BP positions to remove have been found in sequence no. 33.
+2024-09-13 15:53:27,626 - DEBUG - Minimised sequence for sequence no. 33 has been created.
+2024-09-13 15:53:27,654 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_33.fasta
+2024-09-13 15:53:27,825 - DEBUG - Non-non essential genes have been found in sequence no. 34.
+2024-09-13 15:53:27,936 - DEBUG - BP positions to remove have been found in sequence no. 34.
+2024-09-13 15:53:29,282 - DEBUG - Minimised sequence for sequence no. 34 has been created.
+2024-09-13 15:53:29,309 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_34.fasta
+2024-09-13 15:53:29,474 - DEBUG - Non-non essential genes have been found in sequence no. 35.
+2024-09-13 15:53:29,580 - DEBUG - BP positions to remove have been found in sequence no. 35.
+2024-09-13 15:53:30,916 - DEBUG - Minimised sequence for sequence no. 35 has been created.
+2024-09-13 15:53:30,944 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_35.fasta
+2024-09-13 15:53:31,113 - DEBUG - Non-non essential genes have been found in sequence no. 36.
+2024-09-13 15:53:31,224 - DEBUG - BP positions to remove have been found in sequence no. 36.
+2024-09-13 15:53:32,497 - DEBUG - Minimised sequence for sequence no. 36 has been created.
+2024-09-13 15:53:32,523 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_36.fasta
+2024-09-13 15:53:32,690 - DEBUG - Non-non essential genes have been found in sequence no. 37.
+2024-09-13 15:53:32,807 - DEBUG - BP positions to remove have been found in sequence no. 37.
+2024-09-13 15:53:34,086 - DEBUG - Minimised sequence for sequence no. 37 has been created.
+2024-09-13 15:53:34,111 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_37.fasta
+2024-09-13 15:53:34,278 - DEBUG - Non-non essential genes have been found in sequence no. 38.
+2024-09-13 15:53:34,383 - DEBUG - BP positions to remove have been found in sequence no. 38.
+2024-09-13 15:53:35,675 - DEBUG - Minimised sequence for sequence no. 38 has been created.
+2024-09-13 15:53:35,702 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_38.fasta
+2024-09-13 15:53:35,867 - DEBUG - Non-non essential genes have been found in sequence no. 39.
+2024-09-13 15:53:35,978 - DEBUG - BP positions to remove have been found in sequence no. 39.
+2024-09-13 15:53:37,279 - DEBUG - Minimised sequence for sequence no. 39 has been created.
+2024-09-13 15:53:37,305 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_39.fasta
+2024-09-13 15:53:37,474 - DEBUG - Non-non essential genes have been found in sequence no. 40.
+2024-09-13 15:53:37,590 - DEBUG - BP positions to remove have been found in sequence no. 40.
+2024-09-13 15:53:38,863 - DEBUG - Minimised sequence for sequence no. 40 has been created.
+2024-09-13 15:53:38,890 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_40.fasta
+2024-09-13 15:53:39,061 - DEBUG - Non-non essential genes have been found in sequence no. 41.
+2024-09-13 15:53:39,179 - DEBUG - BP positions to remove have been found in sequence no. 41.
+2024-09-13 15:53:40,505 - DEBUG - Minimised sequence for sequence no. 41 has been created.
+2024-09-13 15:53:40,531 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_41.fasta
+2024-09-13 15:53:40,699 - DEBUG - Non-non essential genes have been found in sequence no. 42.
+2024-09-13 15:53:40,822 - DEBUG - BP positions to remove have been found in sequence no. 42.
+2024-09-13 15:53:42,095 - DEBUG - Minimised sequence for sequence no. 42 has been created.
+2024-09-13 15:53:42,122 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_42.fasta
+2024-09-13 15:53:42,289 - DEBUG - Non-non essential genes have been found in sequence no. 43.
+2024-09-13 15:53:42,400 - DEBUG - BP positions to remove have been found in sequence no. 43.
+2024-09-13 15:53:43,720 - DEBUG - Minimised sequence for sequence no. 43 has been created.
+2024-09-13 15:53:43,746 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_43.fasta
+2024-09-13 15:53:43,916 - DEBUG - Non-non essential genes have been found in sequence no. 44.
+2024-09-13 15:53:44,020 - DEBUG - BP positions to remove have been found in sequence no. 44.
+2024-09-13 15:53:45,289 - DEBUG - Minimised sequence for sequence no. 44 has been created.
+2024-09-13 15:53:45,315 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_44.fasta
+2024-09-13 15:53:45,484 - DEBUG - Non-non essential genes have been found in sequence no. 45.
+2024-09-13 15:53:45,590 - DEBUG - BP positions to remove have been found in sequence no. 45.
+2024-09-13 15:53:46,909 - DEBUG - Minimised sequence for sequence no. 45 has been created.
+2024-09-13 15:53:46,936 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_45.fasta
+2024-09-13 15:53:47,104 - DEBUG - Non-non essential genes have been found in sequence no. 46.
+2024-09-13 15:53:47,212 - DEBUG - BP positions to remove have been found in sequence no. 46.
+2024-09-13 15:53:48,486 - DEBUG - Minimised sequence for sequence no. 46 has been created.
+2024-09-13 15:53:48,512 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_46.fasta
+2024-09-13 15:53:48,679 - DEBUG - Non-non essential genes have been found in sequence no. 47.
+2024-09-13 15:53:48,781 - DEBUG - BP positions to remove have been found in sequence no. 47.
+2024-09-13 15:53:50,088 - DEBUG - Minimised sequence for sequence no. 47 has been created.
+2024-09-13 15:53:50,144 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_47.fasta
+2024-09-13 15:53:50,312 - DEBUG - Non-non essential genes have been found in sequence no. 48.
+2024-09-13 15:53:50,419 - DEBUG - BP positions to remove have been found in sequence no. 48.
+2024-09-13 15:53:51,892 - DEBUG - Minimised sequence for sequence no. 48 has been created.
+2024-09-13 15:53:51,938 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_48.fasta
+2024-09-13 15:53:52,124 - DEBUG - Non-non essential genes have been found in sequence no. 49.
+2024-09-13 15:53:52,261 - DEBUG - BP positions to remove have been found in sequence no. 49.
+2024-09-13 15:53:53,578 - DEBUG - Minimised sequence for sequence no. 49 has been created.
+2024-09-13 15:53:53,619 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_49.fasta
+2024-09-13 15:53:53,789 - DEBUG - Non-non essential genes have been found in sequence no. 50.
+2024-09-13 15:53:53,912 - DEBUG - BP positions to remove have been found in sequence no. 50.
+2024-09-13 15:53:55,241 - DEBUG - Minimised sequence for sequence no. 50 has been created.
+2024-09-13 15:53:55,269 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_50.fasta
+2024-09-13 15:53:55,484 - DEBUG - Non-non essential genes have been found in sequence no. 51.
+2024-09-13 15:53:55,744 - DEBUG - BP positions to remove have been found in sequence no. 51.
+2024-09-13 15:53:57,103 - DEBUG - Minimised sequence for sequence no. 51 has been created.
+2024-09-13 15:53:57,145 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_51.fasta
+2024-09-13 15:53:57,319 - DEBUG - Non-non essential genes have been found in sequence no. 52.
+2024-09-13 15:53:57,431 - DEBUG - BP positions to remove have been found in sequence no. 52.
+2024-09-13 15:53:58,726 - DEBUG - Minimised sequence for sequence no. 52 has been created.
+2024-09-13 15:53:58,765 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_52.fasta
+2024-09-13 15:53:58,937 - DEBUG - Non-non essential genes have been found in sequence no. 53.
+2024-09-13 15:53:59,051 - DEBUG - BP positions to remove have been found in sequence no. 53.
+2024-09-13 15:54:00,398 - DEBUG - Minimised sequence for sequence no. 53 has been created.
+2024-09-13 15:54:00,427 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_53.fasta
+2024-09-13 15:54:00,595 - DEBUG - Non-non essential genes have been found in sequence no. 54.
+2024-09-13 15:54:00,728 - DEBUG - BP positions to remove have been found in sequence no. 54.
+2024-09-13 15:54:02,044 - DEBUG - Minimised sequence for sequence no. 54 has been created.
+2024-09-13 15:54:02,073 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_54.fasta
+2024-09-13 15:54:02,246 - DEBUG - Non-non essential genes have been found in sequence no. 55.
+2024-09-13 15:54:02,362 - DEBUG - BP positions to remove have been found in sequence no. 55.
+2024-09-13 15:54:03,736 - DEBUG - Minimised sequence for sequence no. 55 has been created.
+2024-09-13 15:54:03,762 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_55.fasta
+2024-09-13 15:54:03,932 - DEBUG - Non-non essential genes have been found in sequence no. 56.
+2024-09-13 15:54:04,042 - DEBUG - BP positions to remove have been found in sequence no. 56.
+2024-09-13 15:54:05,343 - DEBUG - Minimised sequence for sequence no. 56 has been created.
+2024-09-13 15:54:05,371 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_56.fasta
+2024-09-13 15:54:05,538 - DEBUG - Non-non essential genes have been found in sequence no. 57.
+2024-09-13 15:54:05,646 - DEBUG - BP positions to remove have been found in sequence no. 57.
+2024-09-13 15:54:07,006 - DEBUG - Minimised sequence for sequence no. 57 has been created.
+2024-09-13 15:54:07,034 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_57.fasta
+2024-09-13 15:54:07,208 - DEBUG - Non-non essential genes have been found in sequence no. 58.
+2024-09-13 15:54:07,324 - DEBUG - BP positions to remove have been found in sequence no. 58.
+2024-09-13 15:54:08,673 - DEBUG - Minimised sequence for sequence no. 58 has been created.
+2024-09-13 15:54:08,701 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_58.fasta
+2024-09-13 15:54:08,871 - DEBUG - Non-non essential genes have been found in sequence no. 59.
+2024-09-13 15:54:08,984 - DEBUG - BP positions to remove have been found in sequence no. 59.
+2024-09-13 15:54:10,291 - DEBUG - Minimised sequence for sequence no. 59 has been created.
+2024-09-13 15:54:10,318 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_59.fasta
+2024-09-13 15:54:10,509 - DEBUG - Non-non essential genes have been found in sequence no. 60.
+2024-09-13 15:54:10,623 - DEBUG - BP positions to remove have been found in sequence no. 60.
+2024-09-13 15:54:11,985 - DEBUG - Minimised sequence for sequence no. 60 has been created.
+2024-09-13 15:54:12,014 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_60.fasta
+2024-09-13 15:54:12,183 - DEBUG - Non-non essential genes have been found in sequence no. 61.
+2024-09-13 15:54:12,290 - DEBUG - BP positions to remove have been found in sequence no. 61.
+2024-09-13 15:54:13,565 - DEBUG - Minimised sequence for sequence no. 61 has been created.
+2024-09-13 15:54:13,595 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_61.fasta
+2024-09-13 15:54:13,764 - DEBUG - Non-non essential genes have been found in sequence no. 62.
+2024-09-13 15:54:13,875 - DEBUG - BP positions to remove have been found in sequence no. 62.
+2024-09-13 15:54:15,153 - DEBUG - Minimised sequence for sequence no. 62 has been created.
+2024-09-13 15:54:15,179 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_62.fasta
+2024-09-13 15:54:15,344 - DEBUG - Non-non essential genes have been found in sequence no. 63.
+2024-09-13 15:54:15,448 - DEBUG - BP positions to remove have been found in sequence no. 63.
+2024-09-13 15:54:16,757 - DEBUG - Minimised sequence for sequence no. 63 has been created.
+2024-09-13 15:54:16,785 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_63.fasta
+2024-09-13 15:54:16,950 - DEBUG - Non-non essential genes have been found in sequence no. 64.
+2024-09-13 15:54:17,064 - DEBUG - BP positions to remove have been found in sequence no. 64.
+2024-09-13 15:54:18,397 - DEBUG - Minimised sequence for sequence no. 64 has been created.
+2024-09-13 15:54:18,423 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_64.fasta
+2024-09-13 15:54:18,587 - DEBUG - Non-non essential genes have been found in sequence no. 65.
+2024-09-13 15:54:18,686 - DEBUG - BP positions to remove have been found in sequence no. 65.
+2024-09-13 15:54:19,976 - DEBUG - Minimised sequence for sequence no. 65 has been created.
+2024-09-13 15:54:20,001 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_65.fasta
+2024-09-13 15:54:20,169 - DEBUG - Non-non essential genes have been found in sequence no. 66.
+2024-09-13 15:54:20,280 - DEBUG - BP positions to remove have been found in sequence no. 66.
+2024-09-13 15:54:21,612 - DEBUG - Minimised sequence for sequence no. 66 has been created.
+2024-09-13 15:54:21,639 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_66.fasta
+2024-09-13 15:54:21,804 - DEBUG - Non-non essential genes have been found in sequence no. 67.
+2024-09-13 15:54:21,915 - DEBUG - BP positions to remove have been found in sequence no. 67.
+2024-09-13 15:54:23,224 - DEBUG - Minimised sequence for sequence no. 67 has been created.
+2024-09-13 15:54:23,256 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_67.fasta
+2024-09-13 15:54:23,423 - DEBUG - Non-non essential genes have been found in sequence no. 68.
+2024-09-13 15:54:23,530 - DEBUG - BP positions to remove have been found in sequence no. 68.
+2024-09-13 15:54:24,858 - DEBUG - Minimised sequence for sequence no. 68 has been created.
+2024-09-13 15:54:24,885 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_68.fasta
+2024-09-13 15:54:25,053 - DEBUG - Non-non essential genes have been found in sequence no. 69.
+2024-09-13 15:54:25,177 - DEBUG - BP positions to remove have been found in sequence no. 69.
+2024-09-13 15:54:26,525 - DEBUG - Minimised sequence for sequence no. 69 has been created.
+2024-09-13 15:54:26,603 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_69.fasta
+2024-09-13 15:54:26,778 - DEBUG - Non-non essential genes have been found in sequence no. 70.
+2024-09-13 15:54:26,936 - DEBUG - BP positions to remove have been found in sequence no. 70.
+2024-09-13 15:54:28,287 - DEBUG - Minimised sequence for sequence no. 70 has been created.
+2024-09-13 15:54:28,322 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_70.fasta
+2024-09-13 15:54:28,516 - DEBUG - Non-non essential genes have been found in sequence no. 71.
+2024-09-13 15:54:28,633 - DEBUG - BP positions to remove have been found in sequence no. 71.
+2024-09-13 15:54:30,008 - DEBUG - Minimised sequence for sequence no. 71 has been created.
+2024-09-13 15:54:30,035 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_71.fasta
+2024-09-13 15:54:30,199 - DEBUG - Non-non essential genes have been found in sequence no. 72.
+2024-09-13 15:54:30,301 - DEBUG - BP positions to remove have been found in sequence no. 72.
+2024-09-13 15:54:31,588 - DEBUG - Minimised sequence for sequence no. 72 has been created.
+2024-09-13 15:54:31,616 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_72.fasta
+2024-09-13 15:54:31,784 - DEBUG - Non-non essential genes have been found in sequence no. 73.
+2024-09-13 15:54:31,893 - DEBUG - BP positions to remove have been found in sequence no. 73.
+2024-09-13 15:54:33,240 - DEBUG - Minimised sequence for sequence no. 73 has been created.
+2024-09-13 15:54:33,267 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_73.fasta
+2024-09-13 15:54:33,450 - DEBUG - Non-non essential genes have been found in sequence no. 74.
+2024-09-13 15:54:33,571 - DEBUG - BP positions to remove have been found in sequence no. 74.
+2024-09-13 15:54:34,929 - DEBUG - Minimised sequence for sequence no. 74 has been created.
+2024-09-13 15:54:34,955 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_74.fasta
+2024-09-13 15:54:35,121 - DEBUG - Non-non essential genes have been found in sequence no. 75.
+2024-09-13 15:54:35,227 - DEBUG - BP positions to remove have been found in sequence no. 75.
+2024-09-13 15:54:36,547 - DEBUG - Minimised sequence for sequence no. 75 has been created.
+2024-09-13 15:54:36,575 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_75.fasta
+2024-09-13 15:54:36,743 - DEBUG - Non-non essential genes have been found in sequence no. 76.
+2024-09-13 15:54:36,856 - DEBUG - BP positions to remove have been found in sequence no. 76.
+2024-09-13 15:54:38,143 - DEBUG - Minimised sequence for sequence no. 76 has been created.
+2024-09-13 15:54:38,173 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_76.fasta
+2024-09-13 15:54:38,343 - DEBUG - Non-non essential genes have been found in sequence no. 77.
+2024-09-13 15:54:38,456 - DEBUG - BP positions to remove have been found in sequence no. 77.
+2024-09-13 15:54:39,751 - DEBUG - Minimised sequence for sequence no. 77 has been created.
+2024-09-13 15:54:39,779 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_77.fasta
+2024-09-13 15:54:39,948 - DEBUG - Non-non essential genes have been found in sequence no. 78.
+2024-09-13 15:54:40,058 - DEBUG - BP positions to remove have been found in sequence no. 78.
+2024-09-13 15:54:41,384 - DEBUG - Minimised sequence for sequence no. 78 has been created.
+2024-09-13 15:54:41,411 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_78.fasta
+2024-09-13 15:54:41,580 - DEBUG - Non-non essential genes have been found in sequence no. 79.
+2024-09-13 15:54:41,708 - DEBUG - BP positions to remove have been found in sequence no. 79.
+2024-09-13 15:54:43,003 - DEBUG - Minimised sequence for sequence no. 79 has been created.
+2024-09-13 15:54:43,030 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_79.fasta
+2024-09-13 15:54:43,199 - DEBUG - Non-non essential genes have been found in sequence no. 80.
+2024-09-13 15:54:43,313 - DEBUG - BP positions to remove have been found in sequence no. 80.
+2024-09-13 15:54:44,643 - DEBUG - Minimised sequence for sequence no. 80 has been created.
+2024-09-13 15:54:44,669 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_80.fasta
+2024-09-13 15:54:44,840 - DEBUG - Non-non essential genes have been found in sequence no. 81.
+2024-09-13 15:54:44,946 - DEBUG - BP positions to remove have been found in sequence no. 81.
+2024-09-13 15:54:46,229 - DEBUG - Minimised sequence for sequence no. 81 has been created.
+2024-09-13 15:54:46,255 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_81.fasta
+2024-09-13 15:54:46,426 - DEBUG - Non-non essential genes have been found in sequence no. 82.
+2024-09-13 15:54:46,565 - DEBUG - BP positions to remove have been found in sequence no. 82.
+2024-09-13 15:54:47,914 - DEBUG - Minimised sequence for sequence no. 82 has been created.
+2024-09-13 15:54:47,941 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_82.fasta
+2024-09-13 15:54:48,111 - DEBUG - Non-non essential genes have been found in sequence no. 83.
+2024-09-13 15:54:48,214 - DEBUG - BP positions to remove have been found in sequence no. 83.
+2024-09-13 15:54:49,550 - DEBUG - Minimised sequence for sequence no. 83 has been created.
+2024-09-13 15:54:49,578 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_83.fasta
+2024-09-13 15:54:49,741 - DEBUG - Non-non essential genes have been found in sequence no. 84.
+2024-09-13 15:54:49,843 - DEBUG - BP positions to remove have been found in sequence no. 84.
+2024-09-13 15:54:51,176 - DEBUG - Minimised sequence for sequence no. 84 has been created.
+2024-09-13 15:54:51,203 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_84.fasta
+2024-09-13 15:54:51,423 - DEBUG - Non-non essential genes have been found in sequence no. 85.
+2024-09-13 15:54:51,679 - DEBUG - BP positions to remove have been found in sequence no. 85.
+2024-09-13 15:54:53,026 - DEBUG - Minimised sequence for sequence no. 85 has been created.
+2024-09-13 15:54:53,102 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_85.fasta
+2024-09-13 15:54:53,290 - DEBUG - Non-non essential genes have been found in sequence no. 86.
+2024-09-13 15:54:53,442 - DEBUG - BP positions to remove have been found in sequence no. 86.
+2024-09-13 15:54:54,776 - DEBUG - Minimised sequence for sequence no. 86 has been created.
+2024-09-13 15:54:54,805 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_86.fasta
+2024-09-13 15:54:54,971 - DEBUG - Non-non essential genes have been found in sequence no. 87.
+2024-09-13 15:54:55,089 - DEBUG - BP positions to remove have been found in sequence no. 87.
+2024-09-13 15:54:56,375 - DEBUG - Minimised sequence for sequence no. 87 has been created.
+2024-09-13 15:54:56,401 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_87.fasta
+2024-09-13 15:54:56,568 - DEBUG - Non-non essential genes have been found in sequence no. 88.
+2024-09-13 15:54:56,681 - DEBUG - BP positions to remove have been found in sequence no. 88.
+2024-09-13 15:54:57,958 - DEBUG - Minimised sequence for sequence no. 88 has been created.
+2024-09-13 15:54:57,985 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_88.fasta
+2024-09-13 15:54:58,180 - DEBUG - Non-non essential genes have been found in sequence no. 89.
+2024-09-13 15:54:58,294 - DEBUG - BP positions to remove have been found in sequence no. 89.
+2024-09-13 15:54:59,573 - DEBUG - Minimised sequence for sequence no. 89 has been created.
+2024-09-13 15:54:59,601 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_89.fasta
+2024-09-13 15:54:59,764 - DEBUG - Non-non essential genes have been found in sequence no. 90.
+2024-09-13 15:54:59,874 - DEBUG - BP positions to remove have been found in sequence no. 90.
+2024-09-13 15:55:01,213 - DEBUG - Minimised sequence for sequence no. 90 has been created.
+2024-09-13 15:55:01,241 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_90.fasta
+2024-09-13 15:55:01,411 - DEBUG - Non-non essential genes have been found in sequence no. 91.
+2024-09-13 15:55:01,528 - DEBUG - BP positions to remove have been found in sequence no. 91.
+2024-09-13 15:55:02,828 - DEBUG - Minimised sequence for sequence no. 91 has been created.
+2024-09-13 15:55:02,856 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_91.fasta
+2024-09-13 15:55:03,024 - DEBUG - Non-non essential genes have been found in sequence no. 92.
+2024-09-13 15:55:03,130 - DEBUG - BP positions to remove have been found in sequence no. 92.
+2024-09-13 15:55:04,454 - DEBUG - Minimised sequence for sequence no. 92 has been created.
+2024-09-13 15:55:04,482 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_92.fasta
+2024-09-13 15:55:04,649 - DEBUG - Non-non essential genes have been found in sequence no. 93.
+2024-09-13 15:55:04,761 - DEBUG - BP positions to remove have been found in sequence no. 93.
+2024-09-13 15:55:06,101 - DEBUG - Minimised sequence for sequence no. 93 has been created.
+2024-09-13 15:55:06,127 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_93.fasta
+2024-09-13 15:55:06,297 - DEBUG - Non-non essential genes have been found in sequence no. 94.
+2024-09-13 15:55:06,401 - DEBUG - BP positions to remove have been found in sequence no. 94.
+2024-09-13 15:55:07,686 - DEBUG - Minimised sequence for sequence no. 94 has been created.
+2024-09-13 15:55:07,714 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_94.fasta
+2024-09-13 15:55:07,884 - DEBUG - Non-non essential genes have been found in sequence no. 95.
+2024-09-13 15:55:08,000 - DEBUG - BP positions to remove have been found in sequence no. 95.
+2024-09-13 15:55:09,301 - DEBUG - Minimised sequence for sequence no. 95 has been created.
+2024-09-13 15:55:09,328 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_95.fasta
+2024-09-13 15:55:09,497 - DEBUG - Non-non essential genes have been found in sequence no. 96.
+2024-09-13 15:55:09,604 - DEBUG - BP positions to remove have been found in sequence no. 96.
+2024-09-13 15:55:10,885 - DEBUG - Minimised sequence for sequence no. 96 has been created.
+2024-09-13 15:55:10,913 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_96.fasta
+2024-09-13 15:55:11,080 - DEBUG - Non-non essential genes have been found in sequence no. 97.
+2024-09-13 15:55:11,192 - DEBUG - BP positions to remove have been found in sequence no. 97.
+2024-09-13 15:55:12,502 - DEBUG - Minimised sequence for sequence no. 97 has been created.
+2024-09-13 15:55:12,528 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_97.fasta
+2024-09-13 15:55:12,693 - DEBUG - Non-non essential genes have been found in sequence no. 98.
+2024-09-13 15:55:12,795 - DEBUG - BP positions to remove have been found in sequence no. 98.
+2024-09-13 15:55:14,093 - DEBUG - Minimised sequence for sequence no. 98 has been created.
+2024-09-13 15:55:14,120 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_98.fasta
+2024-09-13 15:55:14,288 - DEBUG - Non-non essential genes have been found in sequence no. 99.
+2024-09-13 15:55:14,393 - DEBUG - BP positions to remove have been found in sequence no. 99.
+2024-09-13 15:55:15,671 - DEBUG - Minimised sequence for sequence no. 99 has been created.
+2024-09-13 15:55:15,698 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_99.fasta
+2024-09-13 15:55:15,867 - DEBUG - Non-non essential genes have been found in sequence no. 100.
+2024-09-13 15:55:15,974 - DEBUG - BP positions to remove have been found in sequence no. 100.
+2024-09-13 15:55:17,266 - DEBUG - Minimised sequence for sequence no. 100 has been created.
+2024-09-13 15:55:17,294 - INFO - Successfully saved reduced genome: /Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_100.fasta
+2024-09-13 15:55:17,511 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2024-09-13 15:55:17,512 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Noto Sans Saurashtra' (NotoSansSaurashtra-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Noto Sans Khudawadi' (NotoSansKhudawadi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Sukhumvit Set' (SukhumvitSet.ttc) normal normal 250 normal>) = 10.1925
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Chalkboard' (Chalkboard.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,513 - DEBUG - findfont: score(<Font 'Noto Serif Ahom' (NotoSerifAhom-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Kayah Li' (NotoSansKayahLi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Andale Mono' (Andale Mono.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Cypriot' (NotoSansCypriot-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Pau Cin Hau' (NotoSansPauCinHau-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Iowan Old Style' (Iowan Old Style.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Newa' (NotoSansNewa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Raanana' (Raanana.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Khojki' (NotoSansKhojki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Limbu' (NotoSansLimbu-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'AppleGothic' (AppleGothic.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Arial Black' (Arial Black.ttf) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'DecoType Naskh' (DecoTypeNaskh.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Ol Chiki' (NotoSansOlChiki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'InaiMathi' (InaiMathi-MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Old Turkic' (NotoSansOldTurkic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Inscriptional Pahlavi' (NotoSansInscriptionalPahlavi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Serif Myanmar' (NotoSerifMyanmar.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font '.Arabic UI Display' (ArabicUIDisplay.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'PT Serif' (PTSerif.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Al Nile' (Al Nile.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Syriac' (NotoSansSyriac-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'PT Serif Caption' (PTSerifCaption.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.otf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'STIXIntegralsD' (STIXIntDReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Osage' (NotoSansOsage-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Noto Sans Tai Viet' (NotoSansTaiViet-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Cochin' (Cochin.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Gujarati Sangam MN' (Gujarati Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,514 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W8.ttc) normal normal 800 normal>) = 10.43
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Corsiva Hebrew' (Corsiva.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Khmer Sangam MN' (Khmer Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.otf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Kohinoor Telugu' (KohinoorTelugu.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Egyptian Hieroglyphs' (NotoSansEgyptianHieroglyphs-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Bangla Sangam MN' (Bangla Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Shavian' (NotoSansShavian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Lydian' (NotoSansLydian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold Italic.ttf) italic normal 700 condensed>) = 11.535
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Comic Sans MS' (Comic Sans MS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Glagolitic' (NotoSansGlagolitic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Helvetica Neue' (HelveticaNeue.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Avestan' (NotoSansAvestan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Al Tarikh' (Al Tarikh.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Krungthep' (Krungthep.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Armenian' (NotoSansArmenian.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Arial' (Arial Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font '.SF Compact' (SFCompactItalic.ttf) italic normal 1000 normal>) = 11.62
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Apple Chancery' (Apple Chancery.ttf) normal normal 0 normal>) = 10.43
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Baskerville' (Baskerville.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Trattatello' (Trattatello.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Thaana' (NotoSansThaana-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Gurmukhi MT' (Gurmukhi.ttf) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Noto Sans Siddham' (NotoSansSiddham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Didot' (Didot.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font '.SF Compact Rounded' (SFCompactRounded.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,515 - DEBUG - findfont: score(<Font 'Farisi' (Farisi.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'AppleMyungjo' (AppleMyungjo.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Tirhuta' (NotoSansTirhuta-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Skia' (Skia.ttf) normal normal 5 normal>) = 10.42525
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Optima' (Optima.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Arial' (Arial Bold Italic.ttf) italic normal 700 normal>) = 7.698636363636363
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'DIN Condensed' (DIN Condensed Bold.ttf) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Palatino' (Palatino.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Myanmar Sangam MN' (Myanmar Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Myanmar' (NotoSansMyanmar.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Hanifi Rohingya' (NotoSansHanifiRohingya-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'System Font' (SFNS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'PT Sans' (PTSans.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Takri' (NotoSansTakri-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Myanmar MN' (Myanmar MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Sinhala Sangam MN' (Sinhala Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Tamil MN' (Tamil MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold.ttf) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W6.ttc) normal normal 600 normal>) = 10.24
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Devanagari Sangam MN' (Devanagari Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Marchen' (NotoSansMarchen-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Meroitic' (NotoSansMeroitic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Avenir Next Condensed' (Avenir Next Condensed.ttc) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Noto Sans Old Italic' (NotoSansOldItalic-Regular.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Mukta Mahee' (MuktaMahee.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,516 - DEBUG - findfont: score(<Font 'Oriya Sangam MN' (Oriya Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Inscriptional Parthian' (NotoSansInscriptionalParthian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Khmer MN' (Khmer MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Beirut' (Beirut.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noteworthy' (Noteworthy.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Baghdad' (Baghdad.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W9.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W5.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Old North Arabian' (NotoSansOldNorthArabian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Psalter Pahlavi' (NotoSansPsalterPahlavi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Nastaliq Urdu' (NotoNastaliq.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Sora Sompeng' (NotoSansSoraSompeng-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Tahoma' (Tahoma Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Telugu MN' (Telugu MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Arial Rounded MT Bold' (Arial Rounded Bold.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Papyrus' (Papyrus.ttc) normal normal 400 condensed>) = 10.25
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Old South Arabian' (NotoSansOldSouthArabian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Lycian' (NotoSansLycian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Seravek' (Seravek.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font '.New York' (NewYork.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Linear B' (NotoSansLinearB-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Superclarendon' (SuperClarendon.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Sans Warang Citi' (NotoSansWarangCiti-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Noto Serif Balinese' (NotoSerifBalinese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Chalkboard SE' (ChalkboardSE.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Al Bayan' (AlBayan.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,517 - DEBUG - findfont: score(<Font 'Diwan Kufi' (Diwan Kufi.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Nadeem' (Nadeem.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Oriya' (NotoSansOriya.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Tai Le' (NotoSansTaiLe-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Waseem' (Waseem.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'DIN Alternate' (DIN Alternate Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Javanese' (NotoSansJavanese-Regular.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Rejang' (NotoSansRejang-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Mshtakan' (Mshtakan.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Lao Sangam MN' (Lao Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Bamum' (NotoSansBamum-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Mishafi Gold' (Mishafi Gold.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Hoefler Text' (Hoefler Text Ornaments.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Helvetica' (Helvetica.ttc) normal normal 400 normal>) = 7.322727272727273
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Multani' (NotoSansMultani-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Mongolian' (NotoSansMongolian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans NKo' (NotoSansNKo-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Thonburi' (Thonburi.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Sathu' (Sathu.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Big Caslon' (BigCaslon.ttf) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Gurmukhi Sangam MN' (Gurmukhi Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Old Persian' (NotoSansOldPersian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans PhagsPa' (NotoSansPhagsPa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Samaritan' (NotoSansSamaritan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Hoefler Text' (Hoefler Text.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Sharada' (NotoSansSharada-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Gujarati MT' (GujaratiMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Noto Sans Miao' (NotoSansMiao-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W0.ttc) normal normal 100 normal>) = 10.335
+2024-09-13 15:55:17,518 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.otf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Imperial Aramaic' (NotoSansImperialAramaic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Kohinoor Devanagari' (Kohinoor.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Devanagari MT' (DevanagariMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Gothic' (NotoSansGothic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W3.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Wingdings 2' (Wingdings 2.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font '.SF NS Mono' (SFNSMono.ttf) normal normal 295 normal>) = 10.14975
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Old Permic' (NotoSansOldPermic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font '.Aqua Kana' (AquaKana.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Gurmukhi MN' (Gurmukhi MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Damascus' (Damascus.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Bhaiksuki' (NotoSansBhaiksuki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Courier New' (Courier New.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Syloti Nagri' (NotoSansSylotiNagri-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Plantagenet Cherokee' (PlantagenetCherokee.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Cham' (NotoSansCham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Snell Roundhand' (SnellRoundhand.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Malayalam MN' (Malayalam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Tagbanwa' (NotoSansTagbanwa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Outline 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Palmyrene' (NotoSansPalmyrene-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'STIXIntegralsD' (STIXIntDBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Vai' (NotoSansVai-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Meetei Mayek' (NotoSansMeeteiMayek-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Athelas' (Athelas.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Noto Sans Lisu' (NotoSansLisu-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Sinhala MN' (Sinhala MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,519 - DEBUG - findfont: score(<Font 'Silom' (Silom.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Hiragino Sans GB' (Hiragino Sans GB.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W2.ttc) normal normal 250 normal>) = 10.1925
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Times' (Times.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.otf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Bold Italic.ttf) italic normal 700 normal>) = 4.971363636363637
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Tamil Sangam MN' (Tamil Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Mro' (NotoSansMro-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Microsoft Sans Serif' (Microsoft Sans Serif.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Tagalog' (NotoSansTagalog-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Lao MN' (Lao MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Carian' (NotoSansCarian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Kohinoor Gujarati' (KohinoorGujarati.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Kharoshthi' (NotoSansKharoshthi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Lepcha' (NotoSansLepcha-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Osmanya' (NotoSansOsmanya-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font '.SF NS Rounded' (SFNSRounded.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Symbol' (Symbol.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Herculanum' (Herculanum.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Avenir' (Avenir.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Linear A' (NotoSansLinearA-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Futura' (Futura.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Songti SC' (Songti.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Kohinoor Bangla' (KohinoorBangla.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Hanunoo' (NotoSansHanunoo-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Diwan Thuluth' (Diwan Thuluth.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,520 - DEBUG - findfont: score(<Font 'Noto Sans Mende Kikakui' (NotoSansMendeKikakui-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Party LET' (PartyLET-plain.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Shree Devanagari 714' (Shree714.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Gill Sans' (GillSans.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Chalkduster' (Chalkduster.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Marker Felt' (MarkerFelt.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Noto Sans Nabataean' (NotoSansNabataean-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Bodoni 72' (Bodoni 72.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Bangla MN' (Bangla MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Tahoma' (Tahoma.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Bodoni 72 Smallcaps' (Bodoni 72 Smallcaps Book.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Avenir Next' (Avenir Next.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Kailasa' (Kailasa.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Arial Hebrew' (ArialHB.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Heiti TC' (STHeiti Medium.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W1.ttc) normal normal 200 normal>) = 10.24
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Bold.ttf) normal normal 700 normal>) = 3.9713636363636367
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Noto Sans Pahawh Hmong' (NotoSansPahawhHmong-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Academy Engraved LET' (Academy Engraved LET Fonts.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Galvji' (Galvji.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W4.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Noto Sans New Tai Lue' (NotoSansNewTaiLue-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'STIXVariants' (STIXVar.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'New Peninim MT' (NewPeninimMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'American Typewriter' (AmericanTypewriter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,521 - DEBUG - findfont: score(<Font 'Apple Symbols' (Apple Symbols.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Tai Tham' (NotoSansTaiTham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Zapfino' (Zapfino.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Zapf Dingbats' (ZapfDingbats.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Ogham' (NotoSansOgham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Bodoni 72 Oldstyle' (Bodoni 72 OS.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Kokonor' (Kokonor.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Oriya MN' (Oriya MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Runic' (NotoSansRunic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Rockwell' (Rockwell.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Menlo' (Menlo.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Modi' (NotoSansModi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Hiragino Maru Gothic Pro' (ヒラギノ丸ゴ ProN W4.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'PingFang HK' (PingFang.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font '.New York' (NewYorkItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow.ttf) normal normal 400 condensed>) = 10.25
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Sundanese' (NotoSansSundanese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Malayalam Sangam MN' (Malayalam Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Phoenician' (NotoSansPhoenician-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Cuneiform' (NotoSansCuneiform-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Muna' (Muna.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Mahajani' (NotoSansMahajani-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Batak' (NotoSansBatak-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'SignPainter' (SignPainter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Kannada MN' (Kannada MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Euphemia UCAS' (EuphemiaCAS.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'STIXVariants' (STIXVarBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font '.Arabic UI Text' (ArabicUIText.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,522 - DEBUG - findfont: score(<Font 'Noto Sans Tifinagh' (NotoSansTifinagh-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Outline 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Apple SD Gothic Neo' (AppleSDGothicNeo.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Phosphate' (Phosphate.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Duployan' (NotoSansDuployan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Yi' (NotoSansYi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Kannada' (NotoSansKannada.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Elbasan' (NotoSansElbasan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Kaithi' (NotoSansKaithi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Farah' (Farah.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Bassa Vah' (NotoSansBassaVah-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Copperplate' (Copperplate.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Marion' (Marion.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Comic Sans MS' (Comic Sans MS Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Wingdings 3' (Wingdings 3.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'System Font' (SFNSItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Heiti TC' (STHeiti Light.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Coptic' (NotoSansCoptic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'PT Mono' (PTMono.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Hiragino Mincho ProN' (ヒラギノ明朝 ProN.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Charter' (Charter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Buginese' (NotoSansBuginese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Kefa' (Kefa.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Caucasian Albanian' (NotoSansCaucasianAlbanian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Wingdings' (Wingdings.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Arial' (Arial Bold.ttf) normal normal 700 normal>) = 6.698636363636363
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Hatran' (NotoSansHatran-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W7.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'ITF Devanagari' (ITFDevanagari.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,523 - DEBUG - findfont: score(<Font 'Noto Sans Wancho' (NotoSansWancho-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Sana' (Sana.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Ayuthaya' (Ayuthaya.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'KufiStandardGK' (KufiStandardGK.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Old Hungarian' (NotoSansOldHungarian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Manichaean' (NotoSansManichaean-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Chakma' (NotoSansChakma-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font '.SF Compact' (SFCompact.ttf) normal normal 1000 normal>) = 10.62
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Telugu Sangam MN' (Telugu Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Geeza Pro' (GeezaPro.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Bradley Hand' (Bradley Hand Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font '.SF NS Mono' (SFNSMonoItalic.ttf) italic normal 295 normal>) = 11.14975
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Kannada Sangam MN' (Kannada Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Savoye LET' (Savoye LET.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Mishafi' (Mishafi.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Bodoni Ornaments' (Bodoni Ornaments.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Luminari' (Luminari.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Italic.ttf) italic normal 400 condensed>) = 11.25
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Adlam' (NotoSansAdlam-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font '.Keyboard' (Keyboard.ttf) normal normal 100 normal>) = 10.335
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Buhid' (NotoSansBuhid-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Brush Script MT' (Brush Script.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Ugaritic' (NotoSansUgaritic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Lucida Grande' (LucidaGrande.ttc) normal normal 500 normal>) = 2.872272727272727
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Mandaic' (NotoSansMandaic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: score(<Font 'Noto Sans Brahmi' (NotoSansBrahmi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,524 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/anastasiiashcherbakova/opt/anaconda3/envs/learning_env/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2024-09-13 15:55:17,530 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,530 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Saurashtra' (NotoSansSaurashtra-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Khudawadi' (NotoSansKhudawadi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Sukhumvit Set' (SukhumvitSet.ttc) normal normal 250 normal>) = 10.1925
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Chalkboard' (Chalkboard.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Serif Ahom' (NotoSerifAhom-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Kayah Li' (NotoSansKayahLi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Andale Mono' (Andale Mono.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Cypriot' (NotoSansCypriot-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Pau Cin Hau' (NotoSansPauCinHau-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Iowan Old Style' (Iowan Old Style.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Newa' (NotoSansNewa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Raanana' (Raanana.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Khojki' (NotoSansKhojki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,531 - DEBUG - findfont: score(<Font 'Noto Sans Limbu' (NotoSansLimbu-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'AppleGothic' (AppleGothic.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Arial Black' (Arial Black.ttf) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'DecoType Naskh' (DecoTypeNaskh.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Ol Chiki' (NotoSansOlChiki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'InaiMathi' (InaiMathi-MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Old Turkic' (NotoSansOldTurkic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Inscriptional Pahlavi' (NotoSansInscriptionalPahlavi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Serif Myanmar' (NotoSerifMyanmar.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font '.Arabic UI Display' (ArabicUIDisplay.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'PT Serif' (PTSerif.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Al Nile' (Al Nile.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Syriac' (NotoSansSyriac-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'PT Serif Caption' (PTSerifCaption.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.otf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'STIXIntegralsD' (STIXIntDReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Osage' (NotoSansOsage-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Tai Viet' (NotoSansTaiViet-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Cochin' (Cochin.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Gujarati Sangam MN' (Gujarati Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W8.ttc) normal normal 800 normal>) = 10.43
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Corsiva Hebrew' (Corsiva.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Khmer Sangam MN' (Khmer Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.otf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Kohinoor Telugu' (KohinoorTelugu.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Egyptian Hieroglyphs' (NotoSansEgyptianHieroglyphs-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Bangla Sangam MN' (Bangla Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Shavian' (NotoSansShavian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Lydian' (NotoSansLydian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold Italic.ttf) italic normal 700 condensed>) = 11.535
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Comic Sans MS' (Comic Sans MS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,532 - DEBUG - findfont: score(<Font 'Noto Sans Glagolitic' (NotoSansGlagolitic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Helvetica Neue' (HelveticaNeue.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Avestan' (NotoSansAvestan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Al Tarikh' (Al Tarikh.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Krungthep' (Krungthep.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Armenian' (NotoSansArmenian.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Arial' (Arial Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font '.SF Compact' (SFCompactItalic.ttf) italic normal 1000 normal>) = 11.62
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Apple Chancery' (Apple Chancery.ttf) normal normal 0 normal>) = 10.43
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Baskerville' (Baskerville.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Trattatello' (Trattatello.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Thaana' (NotoSansThaana-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Gurmukhi MT' (Gurmukhi.ttf) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Siddham' (NotoSansSiddham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Didot' (Didot.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font '.SF Compact Rounded' (SFCompactRounded.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Farisi' (Farisi.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'AppleMyungjo' (AppleMyungjo.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Tirhuta' (NotoSansTirhuta-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Skia' (Skia.ttf) normal normal 5 normal>) = 10.42525
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Optima' (Optima.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Arial' (Arial Bold Italic.ttf) italic normal 700 normal>) = 7.698636363636363
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'DIN Condensed' (DIN Condensed Bold.ttf) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Palatino' (Palatino.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Myanmar Sangam MN' (Myanmar Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Myanmar' (NotoSansMyanmar.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'Noto Sans Hanifi Rohingya' (NotoSansHanifiRohingya-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'System Font' (SFNS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,533 - DEBUG - findfont: score(<Font 'PT Sans' (PTSans.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Takri' (NotoSansTakri-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Myanmar MN' (Myanmar MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Sinhala Sangam MN' (Sinhala Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Tamil MN' (Tamil MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold.ttf) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W6.ttc) normal normal 600 normal>) = 10.24
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Devanagari Sangam MN' (Devanagari Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Marchen' (NotoSansMarchen-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Meroitic' (NotoSansMeroitic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Avenir Next Condensed' (Avenir Next Condensed.ttc) normal normal 700 condensed>) = 10.535
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Old Italic' (NotoSansOldItalic-Regular.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Mukta Mahee' (MuktaMahee.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Oriya Sangam MN' (Oriya Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Inscriptional Parthian' (NotoSansInscriptionalParthian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Khmer MN' (Khmer MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Beirut' (Beirut.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noteworthy' (Noteworthy.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Baghdad' (Baghdad.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W9.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W5.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Old North Arabian' (NotoSansOldNorthArabian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Psalter Pahlavi' (NotoSansPsalterPahlavi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Nastaliq Urdu' (NotoNastaliq.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Noto Sans Sora Sompeng' (NotoSansSoraSompeng-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,534 - DEBUG - findfont: score(<Font 'Tahoma' (Tahoma Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Telugu MN' (Telugu MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Arial Rounded MT Bold' (Arial Rounded Bold.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Papyrus' (Papyrus.ttc) normal normal 400 condensed>) = 10.25
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Old South Arabian' (NotoSansOldSouthArabian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Lycian' (NotoSansLycian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Seravek' (Seravek.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font '.New York' (NewYork.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Linear B' (NotoSansLinearB-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Superclarendon' (SuperClarendon.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Warang Citi' (NotoSansWarangCiti-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Serif Balinese' (NotoSerifBalinese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Chalkboard SE' (ChalkboardSE.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Al Bayan' (AlBayan.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Diwan Kufi' (Diwan Kufi.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Nadeem' (Nadeem.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Oriya' (NotoSansOriya.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Tai Le' (NotoSansTaiLe-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Waseem' (Waseem.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'DIN Alternate' (DIN Alternate Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Javanese' (NotoSansJavanese-Regular.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Rejang' (NotoSansRejang-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Mshtakan' (Mshtakan.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Lao Sangam MN' (Lao Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Bamum' (NotoSansBamum-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Mishafi Gold' (Mishafi Gold.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Hoefler Text' (Hoefler Text Ornaments.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Helvetica' (Helvetica.ttc) normal normal 400 normal>) = 7.322727272727273
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Multani' (NotoSansMultani-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans Mongolian' (NotoSansMongolian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,535 - DEBUG - findfont: score(<Font 'Noto Sans NKo' (NotoSansNKo-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Thonburi' (Thonburi.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Sathu' (Sathu.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Big Caslon' (BigCaslon.ttf) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Gurmukhi Sangam MN' (Gurmukhi Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Old Persian' (NotoSansOldPersian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans PhagsPa' (NotoSansPhagsPa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Samaritan' (NotoSansSamaritan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Hoefler Text' (Hoefler Text.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Sharada' (NotoSansSharada-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Gujarati MT' (GujaratiMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Miao' (NotoSansMiao-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W0.ttc) normal normal 100 normal>) = 10.335
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Courier New' (Courier New Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.otf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Imperial Aramaic' (NotoSansImperialAramaic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Kohinoor Devanagari' (Kohinoor.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Devanagari MT' (DevanagariMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Gothic' (NotoSansGothic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W3.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Wingdings 2' (Wingdings 2.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font '.SF NS Mono' (SFNSMono.ttf) normal normal 295 normal>) = 10.14975
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Old Permic' (NotoSansOldPermic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font '.Aqua Kana' (AquaKana.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Gurmukhi MN' (Gurmukhi MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Damascus' (Damascus.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Bhaiksuki' (NotoSansBhaiksuki-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Courier New' (Courier New.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Noto Sans Syloti Nagri' (NotoSansSylotiNagri-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'Plantagenet Cherokee' (PlantagenetCherokee.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,536 - DEBUG - findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Cham' (NotoSansCham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Snell Roundhand' (SnellRoundhand.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Malayalam MN' (Malayalam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Tagbanwa' (NotoSansTagbanwa-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Outline 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Palmyrene' (NotoSansPalmyrene-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'STIXIntegralsD' (STIXIntDBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Vai' (NotoSansVai-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Meetei Mayek' (NotoSansMeeteiMayek-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Athelas' (Athelas.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Lisu' (NotoSansLisu-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Sinhala MN' (Sinhala MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Silom' (Silom.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Hiragino Sans GB' (Hiragino Sans GB.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W2.ttc) normal normal 250 normal>) = 10.1925
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Times' (Times.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.otf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Bold Italic.ttf) italic normal 700 normal>) = 4.971363636363637
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Tamil Sangam MN' (Tamil Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Mro' (NotoSansMro-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Microsoft Sans Serif' (Microsoft Sans Serif.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Tagalog' (NotoSansTagalog-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Lao MN' (Lao MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Carian' (NotoSansCarian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Kohinoor Gujarati' (KohinoorGujarati.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Kharoshthi' (NotoSansKharoshthi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Lepcha' (NotoSansLepcha-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2024-09-13 15:55:17,537 - DEBUG - findfont: score(<Font 'Noto Sans Osmanya' (NotoSansOsmanya-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font '.SF NS Rounded' (SFNSRounded.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Symbol' (Symbol.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Herculanum' (Herculanum.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Avenir' (Avenir.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Noto Sans Linear A' (NotoSansLinearA-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Futura' (Futura.ttc) normal normal 500 normal>) = 10.145
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Songti SC' (Songti.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Kohinoor Bangla' (KohinoorBangla.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Noto Sans Hanunoo' (NotoSansHanunoo-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Diwan Thuluth' (Diwan Thuluth.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Noto Sans Mende Kikakui' (NotoSansMendeKikakui-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Party LET' (PartyLET-plain.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Shree Devanagari 714' (Shree714.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Gill Sans' (GillSans.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Chalkduster' (Chalkduster.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Marker Felt' (MarkerFelt.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Noto Sans Nabataean' (NotoSansNabataean-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Bodoni 72' (Bodoni 72.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Bangla MN' (Bangla MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Tahoma' (Tahoma.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Bodoni 72 Smallcaps' (Bodoni 72 Smallcaps Book.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Avenir Next' (Avenir Next.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Kailasa' (Kailasa.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Arial Hebrew' (ArialHB.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Heiti TC' (STHeiti Medium.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W1.ttc) normal normal 200 normal>) = 10.24
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Verdana' (Verdana Bold.ttf) normal normal 700 normal>) = 3.9713636363636367
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Noto Sans Pahawh Hmong' (NotoSansPahawhHmong-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Academy Engraved LET' (Academy Engraved LET Fonts.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,538 - DEBUG - findfont: score(<Font 'Galvji' (Galvji.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W4.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans New Tai Lue' (NotoSansNewTaiLue-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'STIXVariants' (STIXVar.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'New Peninim MT' (NewPeninimMT.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'American Typewriter' (AmericanTypewriter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Apple Symbols' (Apple Symbols.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Tai Tham' (NotoSansTaiTham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Zapfino' (Zapfino.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Zapf Dingbats' (ZapfDingbats.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Ogham' (NotoSansOgham-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Bodoni 72 Oldstyle' (Bodoni 72 OS.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Kokonor' (Kokonor.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Oriya MN' (Oriya MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Runic' (NotoSansRunic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Rockwell' (Rockwell.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Menlo' (Menlo.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Modi' (NotoSansModi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Hiragino Maru Gothic Pro' (ヒラギノ丸ゴ ProN W4.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'PingFang HK' (PingFang.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font '.New York' (NewYorkItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow.ttf) normal normal 400 condensed>) = 10.25
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Sundanese' (NotoSansSundanese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Malayalam Sangam MN' (Malayalam Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Phoenician' (NotoSansPhoenician-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Cuneiform' (NotoSansCuneiform-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Muna' (Muna.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Mahajani' (NotoSansMahajani-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,539 - DEBUG - findfont: score(<Font 'Noto Sans Batak' (NotoSansBatak-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'SignPainter' (SignPainter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Kannada MN' (Kannada MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Euphemia UCAS' (EuphemiaCAS.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'STIXVariants' (STIXVarBol.otf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font '.Arabic UI Text' (ArabicUIText.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Tifinagh' (NotoSansTifinagh-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Outline 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Apple SD Gothic Neo' (AppleSDGothicNeo.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Phosphate' (Phosphate.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Duployan' (NotoSansDuployan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Yi' (NotoSansYi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Kannada' (NotoSansKannada.ttc) normal normal 900 normal>) = 10.525
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Elbasan' (NotoSansElbasan-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Kaithi' (NotoSansKaithi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Farah' (Farah.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Bassa Vah' (NotoSansBassaVah-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Georgia' (Georgia Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Copperplate' (Copperplate.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Marion' (Marion.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Comic Sans MS' (Comic Sans MS Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Wingdings 3' (Wingdings 3.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'System Font' (SFNSItalic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Heiti TC' (STHeiti Light.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Coptic' (NotoSansCoptic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'PT Mono' (PTMono.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Hiragino Mincho ProN' (ヒラギノ明朝 ProN.ttc) normal normal 300 normal>) = 10.145
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Charter' (Charter.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Buginese' (NotoSansBuginese-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Kefa' (Kefa.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Noto Sans Caucasian Albanian' (NotoSansCaucasianAlbanian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,540 - DEBUG - findfont: score(<Font 'Wingdings' (Wingdings.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Arial' (Arial Bold.ttf) normal normal 700 normal>) = 6.698636363636363
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Hatran' (NotoSansHatran-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W7.ttc) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'ITF Devanagari' (ITFDevanagari.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Wancho' (NotoSansWancho-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Sana' (Sana.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.otf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Ayuthaya' (Ayuthaya.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'KufiStandardGK' (KufiStandardGK.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Old Hungarian' (NotoSansOldHungarian-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Manichaean' (NotoSansManichaean-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Chakma' (NotoSansChakma-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font '.SF Compact' (SFCompact.ttf) normal normal 1000 normal>) = 10.62
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Telugu Sangam MN' (Telugu Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Geeza Pro' (GeezaPro.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Bradley Hand' (Bradley Hand Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font '.SF NS Mono' (SFNSMonoItalic.ttf) italic normal 295 normal>) = 11.14975
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Kannada Sangam MN' (Kannada Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Times New Roman' (Times New Roman Italic.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Savoye LET' (Savoye LET.ttc) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Mishafi' (Mishafi.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold.ttf) normal normal 700 normal>) = 10.335
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Bodoni Ornaments' (Bodoni Ornaments.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Luminari' (Luminari.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Arial Narrow' (Arial Narrow Italic.ttf) italic normal 400 condensed>) = 11.25
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold Italic.ttf) italic normal 700 normal>) = 11.335
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Adlam' (NotoSansAdlam-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font '.Keyboard' (Keyboard.ttf) normal normal 100 normal>) = 10.335
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Buhid' (NotoSansBuhid-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Brush Script MT' (Brush Script.ttf) italic normal 400 normal>) = 11.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Ugaritic' (NotoSansUgaritic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Lucida Grande' (LucidaGrande.ttc) normal normal 500 normal>) = 2.872272727272727
+2024-09-13 15:55:17,541 - DEBUG - findfont: score(<Font 'Noto Sans Mandaic' (NotoSansMandaic-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,542 - DEBUG - findfont: score(<Font 'Noto Sans Brahmi' (NotoSansBrahmi-Regular.ttf) normal normal 400 normal>) = 10.05
+2024-09-13 15:55:17,542 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Users/anastasiiashcherbakova/opt/anaconda3/envs/learning_env/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2024-09-13 15:55:17,616 - DEBUG - Assigning font /b'F1' = '/Users/anastasiiashcherbakova/opt/anaconda3/envs/learning_env/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+2024-09-13 15:55:17,643 - DEBUG - Embedding font /Users/anastasiiashcherbakova/opt/anaconda3/envs/learning_env/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+2024-09-13 15:55:17,644 - DEBUG - Writing TrueType font.

@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '2_models')))
 
 from GANs_model_1 import *
-from extras import *
+from genomes.extras import *
 import numpy as np
 import torch
 import torch.nn as nn

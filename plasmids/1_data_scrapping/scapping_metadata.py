@@ -3,9 +3,21 @@ from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
 import re
+import time 
 
-plasmid_ids = np.array([42876, 40786]) 
-# plasmid_ids = np.load('path_to_your_plasmid_ids.npy')
+# plasmid_ids = np.array([42876, 40786]) 
+plasmid_ids = np.load('/Users/anastasiiashcherbakova/Desktop/1_data_scrapping/cleaned_plasmid_ids.npy')
+
+csv_file_path = '/Users/anastasiiashcherbakova/git_projects/masters_project/data/plasmid_metadata.csv'
+
+try:
+    data = pd.read_csv(csv_file_path)
+    scrapped_ids = np.array(data['Plasmid ID'])
+    header_written = True  # Header is already written because the file exists
+except FileNotFoundError:
+    scrapped_ids = np.array([])
+    header_written = False  # This shouldn't occur since you mentioned the file already has data
+
 
 def clean_text(text):
     """
@@ -23,6 +35,7 @@ def fetch_plasmid_metadata(plasmid_id):
     
     soup = BeautifulSoup(response.content, 'html.parser')
     
+    # Setting the metadata to extract
     metadata = {
         "Plasmid ID": plasmid_id,
         "Purpose": "Not Available",
@@ -89,14 +102,22 @@ def fetch_plasmid_metadata(plasmid_id):
     
     return metadata
 
-plasmid_metadata_list = []
+csv_file_path = 'plasmid_metadata.csv'
+header_written = True
 
 for plasmid_id in plasmid_ids:
+    if plasmid_id in scrapped_ids:
+        print(f"Skipping plasmid ID {plasmid_id} as it's already processed.")
+        continue
+    
     metadata = fetch_plasmid_metadata(plasmid_id)
     if metadata:
-        plasmid_metadata_list.append(metadata)
-
-df = pd.DataFrame(plasmid_metadata_list)
-df.to_csv('plasmid_metadata.csv', index=False)
+        df = pd.DataFrame([metadata])
+        df.to_csv(csv_file_path, mode='a', header=False, index=True)
+        # header_written = True  
+        
+        print(f"Appended data for plasmid ID {plasmid_id} to {csv_file_path}")
+    
+    time.sleep(np.random.uniform(3, 5))
 
 print("Metadata collection complete.")

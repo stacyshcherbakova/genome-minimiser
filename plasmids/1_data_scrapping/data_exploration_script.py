@@ -66,8 +66,8 @@ df_pca = pd.DataFrame(data_pca, columns=['PC1', 'PC2'])
 
 plt.figure(figsize=(10, 10))
 sns.scatterplot(x='PC1', y='PC2', data=df_pca)
-# plt.xlim(-10, 10)
-# plt.ylim(-10, 10)
+plt.xlim(-10, 10)
+plt.ylim(-10, 10)
 plt.savefig("pca_sequences.pdf", format="pdf", bbox_inches="tight")
 
 ### K-means clustering of PCAed sequences

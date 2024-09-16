@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '2_models')))
 
 from GANs_model_3 import *
-from extras import *
+from genomes.extras import *
 import numpy as np
 import torch
 import torch.nn as nn
@@ -97,9 +97,7 @@ def main():
     batch_size = 4
     num_epochs = 100 
     noise_dim = 600
-    hidden_dim = 128
-    num_layers = 5
-    fig_name = "lstm"
+    fig_name = "gru"
 
     # Tokenization and dataset preparation
     base_tokenizer = Base_Level_Tokenizer()
@@ -108,17 +106,23 @@ def main():
     print("Base Tokenizer Vocabulary:", base_vocab)
 
     base_sequence_encoded = base_tokenizer.sequence_to_indices(sequences)
-    print(f"Encoded sequence: {base_sequence_encoded}")
+    # print(f"Encoded sequence: {base_sequence_encoded}")
 
     base_dataset = Dataset_Prep(base_sequence_encoded, max_length)
-    print("Padded/Truncated Sequences:", base_dataset.padded_sequences)
+    # print("Padded/Truncated Sequences:", base_dataset.padded_sequences)
 
     # Create dataloader
     dataloader_train = DataLoader(base_dataset, batch_size=batch_size, shuffle=True)
 
     # Create models
-    generator = LSTMGenerator(noise_dim, hidden_dim, num_layers, max_length, vocab_size).to(device)
-    discriminator = LSTMDiscriminator(hidden_dim, num_layers, max_length, vocab_size).to(device)
+    # generator = LSTMGenerator(noise_dim, hidden_dim, num_layers, max_length, vocab_size).to(device)
+    # discriminator = LSTMDiscriminator(hidden_dim, num_layers, max_length, vocab_size).to(device)
+    hidden_dim = 256
+    num_layers = 4
+    generator = GRUGenerator(noise_dim, hidden_dim, num_layers, max_length, vocab_size).to(device)
+    hidden_dim = 128
+    num_layers = 2
+    discriminator = GRUDiscriminator(hidden_dim, num_layers, max_length, vocab_size).to(device)
 
     # Loss function and optimizers
     criterion = nn.BCELoss()
