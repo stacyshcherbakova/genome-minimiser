@@ -1,5 +1,5 @@
 import torch.nn as nn
-from genomes.extras import *
+from extras import *
 
 class Generator(nn.Module):
     """

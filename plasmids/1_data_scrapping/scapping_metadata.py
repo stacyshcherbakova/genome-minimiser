@@ -1,3 +1,5 @@
+## Scapping palsmid metadata from Addgenes based on the plasmid IDs
+
 import requests
 from bs4 import BeautifulSoup
 import numpy as np
@@ -16,7 +18,7 @@ try:
     header_written = True  # Header is already written because the file exists
 except FileNotFoundError:
     scrapped_ids = np.array([])
-    header_written = False  # This shouldn't occur since you mentioned the file already has data
+    header_written = False  
 
 
 def clean_text(text):

@@ -20,8 +20,10 @@ import numpy as np
 #     for plasmid in downloaded_plasmids:
 #         f.write(plasmid + '\n')
 
-### Creating a single numpy array of plasmid sequences 
 
+
+## Creating a single numpy array of plasmid sequences by removing the sequences with irrelecvant leters 
+## and appendign them all into a npy array
 directory = '/home/stacys/data/plasmid_sequences'
 
 sequences = []
@@ -52,7 +54,9 @@ plasmid_ids_array = np.array(plasmid_ids).astype(int)
 np.save('cleaned_sequences.npy', sequences_array)
 np.save('cleaned_plasmid_ids.npy', plasmid_ids_array)
 
-# Check the ditribution of sequence lengths
+
+
+## Check the ditribution of sequence lengths
 # sequences = np.load('/home/stacys/src/masters_project/plasmids/1_data_scrapping/all_sequences.npy', allow_pickle=True)
 
 # seq_lengths = []
