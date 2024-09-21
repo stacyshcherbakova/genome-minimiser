@@ -4,7 +4,7 @@ import numpy as np
 import itertools
 import matplotlib.pyplot as plt
 import sklearn
-from VAE_models.VAE_model_enhanced import *
+from VAE_models.VAE_model import *
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 from genomes.training import *
@@ -13,7 +13,7 @@ plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 directory = ""
-folder = "9_final_dataset_enhanced/"
+folder = "8_final_dataset_new_params/"
 
 print("** START OF THE SCRIPT **\n")
 
@@ -72,9 +72,9 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 ## Preping model inputs
 print("PREPPING MODEL INPUTS...")
 # best hyperparams
-# hidden_dim=1024, latent_dim=64, learning_rate=0.001
+# hidden_dim=1024, latent_dim=32, learning_rate=0.001
 # Model inputs 
-hidden_dim = 1024 
+hidden_dim = 1024
 latent_dim = 32
 beta_start = 0.1
 beta_end = 1.0
@@ -83,7 +83,7 @@ max_norm = 1.0
 input_dim = data_array_t.shape[1]
 print(f"Input dimention: {input_dim}")
 
-model = VAE_enhanced(input_dim, hidden_dim, latent_dim).to(device)
+model = VAE(input_dim, hidden_dim, latent_dim).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
 
@@ -92,7 +92,7 @@ print("TRAINING STARTED...")
 train_loss_vals2, val_loss_vals, epochs = train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)
 
 # Save trained model
-torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD_100.pt")
+torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE.pt")
 print("Model saved.")
 
 ## Generating a comparison graph 
@@ -100,7 +100,7 @@ print("GENERATING A COMPARISON GRAPH...")
 # Generating points for graphs
 epochs = np.linspace(1, epochs, num=epochs)
 # Plot train vs val loss graph
-name = folder+"second_model_train_val_loss_BD_100.pdf"
+name = folder+"second_model_train_val_loss.pdf"
 plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
 ## Calculating F1 scores 
@@ -145,7 +145,7 @@ plt.figure(figsize=(10,8))
 plt.hist(f1_scores, color='dodgerblue')
 plt.xlabel("F1 score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"f1_score_frequency_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"f1_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # Ploting a histogram of all calculated Accuracy scores scores 
@@ -153,7 +153,7 @@ plt.figure(figsize=(10,8))
 plt.hist(accuracy_scores, color='dodgerblue')
 plt.xlabel("Accuracy score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"accuracy_score_frequency_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"accuracy_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # ## Exploring latent space
@@ -161,7 +161,7 @@ print("EXPLORING THE LATENT SPACE...")
 # Get latent variables
 latents = get_latent_variables(model, test_loader, device)
 # Apply t-SNE for dimensionality reduction
-name = folder+"tsne_latent_space_visualisation_BD_100.pdf"
+name = folder+"tsne_latent_space_visualisation.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)
@@ -186,7 +186,7 @@ fig, axes = plt.subplots(1, 2, figsize=(20, 10))
 # plt.figure(figsize=(10, 10))
 sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[0])
 sns.scatterplot(x='PC2', y='PC3', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[1])
-plt.savefig(folder+"pca_latent_space_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"pca_latent_space_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # print("\nHyperparameter tuning")
@@ -204,7 +204,7 @@ plt.show()
 # for hidden_dim, latent_dim, learning_rate in itertools.product(
 #     hidden_dim_values, latent_dim_values, learning_rate_values): #beta_start_values, beta_end_values, max_norm_values
 #     print(f"Training with hidden_dim={hidden_dim}, latent_dim={latent_dim}, learning_rate={learning_rate}") # beta_start={beta_start}, beta_end={beta_end}, max_norm={max_norm}"
-#     model = VAE_enhanced(input_dim, hidden_dim, latent_dim).to(device)
+#     model = VAE(input_dim, hidden_dim, latent_dim).to(device)
 #     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 #     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
 #     train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=10, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)

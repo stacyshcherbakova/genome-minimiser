@@ -10,3 +10,11 @@ AHPT - after hyperparameter tuning
 number - epochs 
 
 ## Requirements
+
+- **Python**: All required Python packages can be found in the `requirements.txt` file (for `pip` installation).
+- **Conda**: The environment configuration, including Conda packages, is listed in the `environment.yml` file.
+- **R**: For R scripts, the necessary packages are listed in `installed_packages.txt`.
+
+To set up **pLannotate**, follow the instructions provided in their [repository](https://github.com/mmcguffi/pLannotate).
+
+

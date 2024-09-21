@@ -1,10 +1,6 @@
 ## Gwenerating sequences size distribution
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import OneHotEncoder
 plt.style.use('ggplot')
 
 figures_dir = "/Users/anastasiiashcherbakova/git_projects/masters_project/figures/"

@@ -12,20 +12,19 @@ from genomes.extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-directory = ""
-folder = "8_final_dataset_new_params/"
+folder = "7_all_genes_new_params/"
 
 print("** START OF THE SCRIPT **\n")
 
 ## Loading and preping the dataset
 print("LOADING THE DATASET...")
-large_data = pd.read_csv(directory+"F4_complete_presence_absence.csv", index_col=[0], header=[0])
+large_data = pd.read_csv("F4_complete_presence_absence.csv", index_col=[0], header=[0])
 large_data.columns = large_data.columns.str.upper()
-phylogroup_data = pd.read_csv(directory+"accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
+phylogroup_data = pd.read_csv("accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
 
 data_without_lineage = large_data.drop(index=['Lineage'])
-merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')
-# merged_df['Phylogroup'] = merged_df['Phylogroup'].fillna('Not determined')
+merged_df = data_without_lineage.transpose().merge(phylogroup_data, how='left', left_index=True, right_index=True)
+merged_df['Phylogroup'] = merged_df['Phylogroup'].fillna('Not determined')
 print(merged_df['Phylogroup'].value_counts())
 
 # numeric_cols = merged_df.select_dtypes(include='number')
@@ -72,13 +71,13 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 ## Preping model inputs
 print("PREPPING MODEL INPUTS...")
 # best hyperparams
-# hidden_dim=1024, latent_dim=32, learning_rate=0.001
+# hidden_dim=1024, latent_dim=64, learning_rate=0.001
 # Model inputs 
 hidden_dim = 1024
-latent_dim = 32
+latent_dim = 64
 beta_start = 0.1
 beta_end = 1.0
-n_epochs = 1000
+n_epochs = 100
 max_norm = 1.0 
 input_dim = data_array_t.shape[1]
 print(f"Input dimention: {input_dim}")
@@ -89,18 +88,18 @@ scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
 
 ## Trainign the model
 print("TRAINING STARTED...")
-train_loss_vals2, val_loss_vals, epochs = train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)
+train_loss_vals2, val_loss_vals = train_with_KL_annelaing(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, beta_start=beta_start, beta_end=beta_end, max_norm=max_norm)
 
 # Save trained model
-torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD_100.pt")
+torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE.pt")
 print("Model saved.")
 
 ## Generating a comparison graph 
 print("GENERATING A COMPARISON GRAPH...")
 # Generating points for graphs
-epochs = np.linspace(1, epochs, num=epochs)
+epochs = np.linspace(1, n_epochs, num=n_epochs)
 # Plot train vs val loss graph
-name = folder+"second_model_train_val_loss_BD_100.pdf"
+name = folder+"second_model_train_val_loss.pdf"
 plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
 ## Calculating F1 scores 
@@ -145,7 +144,7 @@ plt.figure(figsize=(10,8))
 plt.hist(f1_scores, color='dodgerblue')
 plt.xlabel("F1 score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"f1_score_frequency_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"f1_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # Ploting a histogram of all calculated Accuracy scores scores 
@@ -153,7 +152,7 @@ plt.figure(figsize=(10,8))
 plt.hist(accuracy_scores, color='dodgerblue')
 plt.xlabel("Accuracy score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"accuracy_score_frequency_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"accuracy_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # ## Exploring latent space
@@ -161,7 +160,7 @@ print("EXPLORING THE LATENT SPACE...")
 # Get latent variables
 latents = get_latent_variables(model, test_loader, device)
 # Apply t-SNE for dimensionality reduction
-name = folder+"tsne_latent_space_visualisation_BD_100.pdf"
+name = folder+"tsne_latent_space_visualisation.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)
@@ -186,7 +185,7 @@ fig, axes = plt.subplots(1, 2, figsize=(20, 10))
 # plt.figure(figsize=(10, 10))
 sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[0])
 sns.scatterplot(x='PC2', y='PC3', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[1])
-plt.savefig(folder+"pca_latent_space_test_set_100.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"pca_latent_space_test_set.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # print("\nHyperparameter tuning")

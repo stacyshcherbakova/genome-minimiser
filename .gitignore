@@ -22,7 +22,7 @@ GAN_training_4.py
 5_DNAGPT_as_gen
 figures
 greedy_algo.py
-train_full_dataset.py
+train_final_datatset_enhanced.py
 main_large_full_dataset.ipynb
 genome_minimiser.log
 data_exploration_script.py
