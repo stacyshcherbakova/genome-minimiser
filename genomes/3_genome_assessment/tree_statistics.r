@@ -3,12 +3,13 @@ library(phytools)
 library(treestats)
 library(treebalance)
 
-phylo_tree <- read.tree("/Users/anastasiiashcherbakova/git_projects/masters_project/data/upgma_tree_final_dataset.newick")
+data_dir <- "/Users/anastasiiashcherbakova/git_projects/masters_project/data/"
+phylo_tree <- read.tree(data_dir+"upgma_tree_final_dataset.newick")
 
 tree_height <- max(nodeHeights(phylo_tree))
 cat("Tree height using nodeHeights:", tree_height, "\n")
 
-pairwise_dist_matrix <- as.matrix(read.csv("/Users/anastasiiashcherbakova/git_projects/masters_project/data/pairwise_distances_final_dataset.csv", header=FALSE))
+pairwise_dist_matrix <- as.matrix(read.csv(data_dir+"pairwise_distances_final_dataset.csv", header=FALSE))
 
 avg_pairwise_distance <- mean(pairwise_dist_matrix[lower.tri(pairwise_dist_matrix)])
 cat("Average pairwise distance:", avg_pairwise_distance, "\n")

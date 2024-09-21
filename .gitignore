@@ -24,3 +24,4 @@ figures
 greedy_algo.py
 train_full_dataset.py
 main_large_full_dataset.ipynb
+genome_minimiser.log

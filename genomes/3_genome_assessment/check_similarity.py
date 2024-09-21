@@ -1,6 +1,9 @@
+## checks if you have any identical sequences in your npy file 
+
 import numpy as np
 
-arrays = np.load('/Users/anastasiiashcherbakova/git_projects/masters_project/data/cleaned_genes_lists.npy', allow_pickle=True)
+data_dir="/Users/anastasiiashcherbakova/git_projects/masters_project/data/"
+arrays = np.load(data_dir+'cleaned_genes_lists.npy', allow_pickle=True)
 
 n = len(arrays)
 identical_pairs = []

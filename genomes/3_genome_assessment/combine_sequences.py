@@ -1,3 +1,4 @@
+## Combines all the fasta sequences in your directory 
 import os
 
 fasta_dir = "/Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes"
