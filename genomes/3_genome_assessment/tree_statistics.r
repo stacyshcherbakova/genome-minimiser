@@ -1,3 +1,5 @@
+## Calculates newick tree statictics
+
 library(ape)
 library(phytools)
 library(treestats)
