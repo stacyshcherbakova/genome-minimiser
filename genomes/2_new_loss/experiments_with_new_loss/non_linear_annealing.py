@@ -12,15 +12,16 @@ from genomes.extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+directory = "/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/"
 folder = "11_non_linear_annealing/"
 
 print("** START OF THE SCRIPT **\n")
 
 ## Loading and preping the dataset
 print("LOADING THE DATASET...")
-large_data = pd.read_csv("/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/F4_complete_presence_absence.csv", index_col=[0], header=[0])
+large_data = pd.read_csv(directory+"F4_complete_presence_absence.csv", index_col=[0], header=[0])
 large_data.columns = large_data.columns.str.upper()
-phylogroup_data = pd.read_csv("/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
+phylogroup_data = pd.read_csv(directory+"accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
 
 data_without_lineage = large_data.drop(index=['Lineage'])
 merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')
@@ -79,7 +80,7 @@ print("TRAINING STARTED...")
 train_loss_vals2, val_loss_vals, epochs = train_cyclic_KL_annealing_additional_loss(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, min_beta=min_beta, max_beta=max_beta, gamma_start=gamma_start, gamma_end=gamma_end, max_norm=max_norm, lambda_l1=lambda_l1)
 
 # Save trained model
-torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD.pt")
+torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE.pt")
 print("Model saved.")
 
 ## Generating a comparison graph 
@@ -87,7 +88,7 @@ print("GENERATING A COMPARISON GRAPH...")
 # Generating points for graphs
 epochs = np.linspace(1, epochs, num=epochs)
 # Plot train vs val loss graph
-name = folder+"second_model_train_val_loss_BD.pdf"
+name = folder+"second_model_train_val_loss.pdf"
 plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
 ## Calculating F1 scores 
@@ -148,7 +149,7 @@ print("EXPLORING THE LATENT SPACE...")
 # Get latent variables
 latents = get_latent_variables(model, test_loader, device)
 # Apply t-SNE for dimensionality reduction
-name = folder+"tsne_latent_space_visualisation_BD.pdf"
+name = folder+"tsne_latent_space_visualisation.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)

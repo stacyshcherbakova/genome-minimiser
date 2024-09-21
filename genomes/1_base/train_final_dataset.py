@@ -12,15 +12,16 @@ from genomes.extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+directory = ""
 folder = "8_final_dataset_new_params/"
 
 print("** START OF THE SCRIPT **\n")
 
 ## Loading and preping the dataset
 print("LOADING THE DATASET...")
-large_data = pd.read_csv("F4_complete_presence_absence.csv", index_col=[0], header=[0])
+large_data = pd.read_csv(directory+"F4_complete_presence_absence.csv", index_col=[0], header=[0])
 large_data.columns = large_data.columns.str.upper()
-phylogroup_data = pd.read_csv("accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
+phylogroup_data = pd.read_csv(directory+"accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
 
 data_without_lineage = large_data.drop(index=['Lineage'])
 merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')

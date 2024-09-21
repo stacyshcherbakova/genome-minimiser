@@ -12,15 +12,16 @@ from genomes.extras import *
 plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+directory = "/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/"
 folder = "15_genome_size_and_cyclic_annealing_SCALED/"
 
 print("** START OF THE SCRIPT **\n")
 
 ## Loading and preping the dataset
 print("LOADING THE DATASET...")
-large_data = pd.read_csv("/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/F4_complete_presence_absence.csv", index_col=[0], header=[0])
+large_data = pd.read_csv(directory+"F4_complete_presence_absence.csv", index_col=[0], header=[0])
 large_data.columns = large_data.columns.str.upper()
-phylogroup_data = pd.read_csv("/cs/student/msc/cs/2023/ashcherb/masters_project/2_bigdataset/accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
+phylogroup_data = pd.read_csv(directory+"accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
 
 data_without_lineage = large_data.drop(index=['Lineage'])
 merged_df = pd.merge(data_without_lineage.transpose(), phylogroup_data, how='inner', left_index=True, right_on='ID')
@@ -81,7 +82,7 @@ print("TRAINING STARTED...")
 train_loss_vals2, val_loss_vals, epochs = train_cyclic_KL_annealing_additional_loss_SCALED(model=model, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, min_beta=min_beta, max_beta=max_beta, gamma_gene_abundance_start=gamma_gene_abundance_start, gamma_gene_abundance_end=gamma_gene_abundance_end, gamma_genome_size_start=gamma_genome_size_start, gamma_genome_size_end=gamma_genome_size_end, max_norm=max_norm, lambda_l1=lambda_l1)
 
 # Save trained model
-torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE_BD.pt")
+torch.save(model.state_dict(), folder+"saved_KL_annealing_VAE.pt")
 print("Model saved.")
 
 ## Generating a comparison graph 
@@ -89,7 +90,7 @@ print("GENERATING A COMPARISON GRAPH...")
 # Generating points for graphs
 epochs = np.linspace(1, epochs, num=epochs)
 # Plot train vs val loss graph
-name = folder+"second_model_train_val_loss_BD.pdf"
+name = folder+"second_model_train_val_loss.pdf"
 plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
 ## Calculating F1 scores 
@@ -134,7 +135,7 @@ plt.figure(figsize=(10,8))
 plt.hist(f1_scores, color='dodgerblue')
 plt.xlabel("F1 score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"f1_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"f1_score_frequency_test.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # Ploting a histogram of all calculated Accuracy scores scores 
@@ -142,7 +143,7 @@ plt.figure(figsize=(10,8))
 plt.hist(accuracy_scores, color='dodgerblue')
 plt.xlabel("Accuracy score")
 plt.ylabel("Frequency")
-plt.savefig(folder+"accuracy_score_frequency_test_set.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"accuracy_score_frequency_test.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # ## Exploring latent space
@@ -150,7 +151,7 @@ print("EXPLORING THE LATENT SPACE...")
 # Get latent variables
 latents = get_latent_variables(model, test_loader, device)
 # Apply t-SNE for dimensionality reduction
-name = folder+"tsne_latent_space_visualisation_BD.pdf"
+name = folder+"tsne_latent_space_visualisation.pdf"
 # do_tsne(n_components=2, latents=latents, fig_name=name)
 tsne = TSNE(n_components=2)
 tsne_latents = tsne.fit_transform(latents)
@@ -175,7 +176,7 @@ fig, axes = plt.subplots(1, 2, figsize=(20, 10))
 # plt.figure(figsize=(10, 10))
 sns.scatterplot(x='PC1', y='PC2', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[0])
 sns.scatterplot(x='PC2', y='PC3', hue = df_pca['phylogroup'] , data=df_pca, ax=axes[1])
-plt.savefig(folder+"pca_latent_space_test_set.pdf", format="pdf", bbox_inches="tight")
+plt.savefig(folder+"pca_latent_space_test.pdf", format="pdf", bbox_inches="tight")
 plt.show()
 
 # print("\nHyperparameter tuning")
