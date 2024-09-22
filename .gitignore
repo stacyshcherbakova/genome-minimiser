@@ -29,3 +29,4 @@ data_exploration_script.py
 bakta_script.sh
 additional_final_enhanced.py
 .DS_Store
+HF_model.py
