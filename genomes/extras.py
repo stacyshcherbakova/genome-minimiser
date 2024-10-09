@@ -74,7 +74,7 @@ def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_n
     min_value = np.min(essential_genes_count_per_sample)
     max_value = np.max(essential_genes_count_per_sample)
 
-    plt.figure(figsize=(10,10))
+    plt.figure(figsize=(4,4), dpi=300)
     plt.hist(essential_genes_count_per_sample, bins=10, color=plot_color)
     plt.xlabel('Essential genes number')
     plt.ylabel('Frequency')
@@ -88,7 +88,7 @@ def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_n
             plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'),
             dummy_min, dummy_max]
 
-    plt.legend(handles=handles)
+    plt.legend(handles=handles, fontsize=8)
 
     plt.savefig(figure_name, format="pdf", bbox_inches="tight")
 
@@ -118,7 +118,7 @@ def plot_samples_distribution(binary_generated_samples, figure_name, plot_color)
     min_value = np.min(samples_size_sum)
     max_value = np.max(samples_size_sum)
 
-    plt.figure(figsize=(10,10))
+    plt.figure(figsize=(4,4), dpi=300)
     plt.hist(samples_size_sum, bins=10, color=plot_color)
     plt.xlabel('Genome size')
     plt.ylabel('Frequency')
@@ -132,7 +132,7 @@ def plot_samples_distribution(binary_generated_samples, figure_name, plot_color)
             plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'),
             dummy_min, dummy_max]
 
-    plt.legend(handles=handles)
+    plt.legend(handles=handles, fontsize=8)
 
     plt.savefig(figure_name, format="pdf", bbox_inches="tight")
 
@@ -321,7 +321,7 @@ def do_tsne(n_components, latents, fig_name):
     tsne = TSNE(n_components=n_components)
     latents_2d = tsne.fit_transform(latents)
 
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(4,4), dpi=300)
     plt.scatter(latents_2d[:, 0], latents_2d[:, 1], color='dodgerblue')
     plt.xlabel('t-SNE Dimension 1')
     plt.ylabel('t-SNE Dimension 2')
@@ -347,7 +347,7 @@ def do_pca(n_components, latents, fig_name):
     pca = PCA(n_components=n_components)
     data_pca = pca.fit_transform(latents)
     df_pca = pd.DataFrame(data_pca, columns=['PC1', 'PC2'])
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(4,4), dpi=300)
     sns.scatterplot(x='PC1', y='PC2', data=df_pca, color='dodgerblue')
     plt.savefig(fig_name, format="pdf", bbox_inches="tight")
     plt.show()
@@ -369,13 +369,13 @@ def plot_loss_vs_epochs_graph(epochs, train_loss_vals, val_loss_vals, fig_name):
 
     '''
 
-    plt.figure(figsize=(10,8))
+    plt.figure(figsize=(4,4), dpi=300)
     plt.scatter(epochs, train_loss_vals, color='dodgerblue')
     plt.plot(epochs, train_loss_vals, label='Train Loss', color='dodgerblue')
     plt.scatter(epochs, val_loss_vals, color='darkorange')
     plt.plot(epochs, val_loss_vals, label='Validation Loss', color='darkorange')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
-    plt.legend()
+    plt.legend(fontsize=8)
     plt.savefig(fig_name, format="pdf", bbox_inches="tight")
     plt.show()

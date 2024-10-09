@@ -30,3 +30,6 @@ bakta_script.sh
 additional_final_enhanced.py
 .DS_Store
 HF_model.py
+add_genome_size.py
+new_loss_enhanced.py
+train_final_dataset_new_params.py

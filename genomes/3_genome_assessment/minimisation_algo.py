@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
 log_file_path = "genome_minimiser.log"
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s',
