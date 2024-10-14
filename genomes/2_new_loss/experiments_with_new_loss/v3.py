@@ -9,7 +9,7 @@ sys.path.append("..")
 from VAE_model import *
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
-from training2 import *
+from training import *
 from extras import *
 # plt.style.use('ggplot')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -65,8 +65,8 @@ hidden_dim = 512
 latent_dim = 32
 min_beta = 0.1
 max_beta = 1.0
-start_gamma = 1.0
-stop_gamma = 0.1
+gamma_start = 2.0
+gamma_end = 0.1
 n_epochs = 10000
 max_norm = 1.0 
 lambda_l1 = 0.01
@@ -76,16 +76,15 @@ print(f"Input dimention: {input_dim}")
 model = VAE(input_dim, hidden_dim, latent_dim).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
-weights = [1, 2, 3]
+weights = [1, 2] # 1, 2, 3, 4, 1.5, 2.5
 
 for weight in weights:
-
     ## Trainign the model
-    print(f"TRAINING STARTED WITH WEIGHT {weight}...")
-    train_loss_vals2, val_loss_vals, epochs = v3(model=model, folder=folder, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, min_beta=min_beta, max_beta=max_beta, start_gamma=start_gamma, stop_gamma=stop_gamma, weight=weight, max_norm=max_norm, lambda_l1=lambda_l1)
+    print(f"TRAINING STARTED WITH WEIGHT {weight} (gamma start 2)...")
+    train_loss_vals2, val_loss_vals, epochs = v3(model=model, folder=folder, optimizer=optimizer, scheduler=scheduler, n_epochs=n_epochs, train_loader=train_loader, val_loader=val_loader, min_beta=min_beta, max_beta=max_beta, gamma_start=gamma_start, gamma_end=gamma_end, weight=weight, max_norm=max_norm, lambda_l1=lambda_l1)
 
     # Save trained model
-    torch.save(model.state_dict(), f"saved_VAE_{weight}.pt")
+    torch.save(model.state_dict(), f"saved_VAE_{weight}_gammastart2.pt")
     print("Model saved.")
 
     ## Generating a comparison graph 
@@ -93,7 +92,7 @@ for weight in weights:
     # Generating points for graphs
     epochs = np.linspace(1, epochs, num=epochs)
     # Plot train vs val loss graph
-    name = (f"train_val_loss_{weight}.pdf")
+    name = (f"train_val_loss_{weight}_gammastart2.pdf")
     plot_loss_vs_epochs_graph(epochs=epochs, train_loss_vals=train_loss_vals2, val_loss_vals=val_loss_vals, fig_name=name)
 
     ## Calculating F1 scores 
@@ -138,7 +137,7 @@ for weight in weights:
     plt.hist(f1_scores, color='dodgerblue')
     plt.xlabel("F1 score")
     plt.ylabel("Frequency")
-    plt.savefig(f"f1_score_frequency_test_{weight}.pdf", format="pdf", bbox_inches="tight")
+    plt.savefig(f"f1_score_frequency_test_{weight}_gammastart2.pdf", format="pdf", bbox_inches="tight")
     plt.show()
     plt.close()
 
@@ -147,7 +146,7 @@ for weight in weights:
     plt.hist(accuracy_scores, color='dodgerblue')
     plt.xlabel("Accuracy score")
     plt.ylabel("Frequency")
-    plt.savefig(f"accuracy_score_frequency_test_{weight}.pdf", format="pdf", bbox_inches="tight")
+    plt.savefig(f"accuracy_score_frequency_test_{weight}_gammastart2.pdf", format="pdf", bbox_inches="tight")
     plt.show()
     plt.close()
 
@@ -156,7 +155,7 @@ for weight in weights:
     # Get latent variables
     latents = get_latent_variables(model, test_loader, device)
     # Apply t-SNE for dimensionality reduction
-    name = (f"tsne_latent_space_visualisation_{weight}.pdf")
+    name = (f"tsne_latent_space_visualisation_{weight}_gammastart2.pdf")
     # do_tsne(n_components=2, latents=latents, fig_name=name)
     tsne = TSNE(n_components=2)
     tsne_latents = tsne.fit_transform(latents)
@@ -187,7 +186,7 @@ for weight in weights:
     for ax in axes:
         handles, labels = ax.get_legend_handles_labels()
         ax.legend(handles, labels, fontsize=8)
-    plt.savefig(f"pca_latent_space_test_{weight}.pdf", format="pdf", bbox_inches="tight")
+    plt.savefig(f"pca_latent_space_test_{weight}_gammastart2.pdf", format="pdf", bbox_inches="tight")
     plt.show()
     plt.close()
 

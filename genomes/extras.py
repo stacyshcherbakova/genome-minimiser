@@ -5,8 +5,46 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import seaborn as sns
+import re
 from VAE_models.VAE_model import *
 from VAE_models.VAE_model_enhanced import *
+
+def extract_prefix(gene):
+    match = re.match(r"([a-zA-Z0-9]+)", gene)
+    if match:
+        return match.group(1)
+    return gene
+
+def cleaned_100_samples_lists(essential_genes_count_per_sample, additional_generated_samples, all_genes, datatset_EG):
+    # Step 1: Get the top 100 essential gene counts
+    top_100_values = np.sort(essential_genes_count_per_sample)[-100:][::-1]
+
+    # Step 2: Find the sequence indices in the array
+    sequence_indices = []
+    for value in top_100_values:
+        indices = np.where(essential_genes_count_per_sample == value)[0]
+        sequence_indices.extend(indices)
+
+    # Ensure we only get the first 100 unique indices in case of duplicates
+    sequence_indices = sequence_indices[:100]
+
+    # Step 3: Get the samples from additional_generated_samples
+    samples = additional_generated_samples[sequence_indices]
+
+    # Step 4: Find what genes they have present
+    present_genes_lists = []
+    for sample in samples:
+        present_genes = all_genes[:-1][sample == 1]
+        present_genes_lists.append(present_genes)
+
+    # Step 5: Clean up the gene names and add essential genes
+    cleaned_genes_lists = []
+    for genes in present_genes_lists:
+        cleaned_gene_names = [extract_prefix(name) for name in genes]
+        cleaned_gene_names.extend(datatset_EG) 
+        cleaned_genes_lists.append(cleaned_gene_names)
+
+    return cleaned_genes_lists
 
 def count_essential_genes(binary_generated_samples, essential_gene_positions):
     '''
@@ -50,7 +88,7 @@ def count_essential_genes(binary_generated_samples, essential_gene_positions):
 
     return essential_genes_count_per_sample
 
-def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_name, plot_color):
+def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_name, plot_color, x_min=0, x_max=0):
     '''
     plot_essential_genes_distribution fucntion plot the frequency of essential genes of the samples
 
@@ -69,30 +107,29 @@ def plot_essential_genes_distribution(essential_genes_count_per_sample, figure_n
 
     '''
 
-    mean = np.mean(essential_genes_count_per_sample)
+    # mean = np.mean(essential_genes_count_per_sample)
     median = np.median(essential_genes_count_per_sample)
     min_value = np.min(essential_genes_count_per_sample)
     max_value = np.max(essential_genes_count_per_sample)
 
     plt.figure(figsize=(4,4), dpi=300)
     plt.hist(essential_genes_count_per_sample, bins=10, color=plot_color)
+    plt.xlim(x_min, x_max)
     plt.xlabel('Essential genes number')
     plt.ylabel('Frequency')
 
-    plt.axvline(mean, color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}')
+    # plt.axvline(mean, color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}')
     plt.axvline(median, color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}')
     dummy_min = plt.Line2D([], [], color='black',  linewidth=2, label=f'Min: {min_value:.2f}')
     dummy_max = plt.Line2D([], [], color='black', linewidth=2, label=f'Max: {max_value:.2f}')
 
-    handles = [plt.Line2D([], [], color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}'),
-            plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'),
-            dummy_min, dummy_max]
+    handles = [plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'), dummy_min, dummy_max] # plt.Line2D([], [], color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}'),
 
     plt.legend(handles=handles, fontsize=8)
 
     plt.savefig(figure_name, format="pdf", bbox_inches="tight")
 
-def plot_samples_distribution(binary_generated_samples, figure_name, plot_color):
+def plot_samples_distribution(binary_generated_samples, figure_name, plot_color, x_min=0, x_max=0):
     '''
     plot_samples_distribution finction plots the frequence distribution of genome sizes
 
@@ -113,24 +150,23 @@ def plot_samples_distribution(binary_generated_samples, figure_name, plot_color)
 
     samples_size_sum = binary_generated_samples.sum(axis=1)
 
-    mean = np.mean(samples_size_sum)
+    # mean = np.mean(samples_size_sum)
     median = np.median(samples_size_sum)
     min_value = np.min(samples_size_sum)
     max_value = np.max(samples_size_sum)
 
     plt.figure(figsize=(4,4), dpi=300)
     plt.hist(samples_size_sum, bins=10, color=plot_color)
+    plt.xlim(x_min, x_max)
     plt.xlabel('Genome size')
     plt.ylabel('Frequency')
 
-    plt.axvline(mean, color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}')
+    # plt.axvline(mean, color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}')
     plt.axvline(median, color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}')
     dummy_min = plt.Line2D([], [], color='black',  linewidth=2, label=f'Min: {min_value:.2f}')
     dummy_max = plt.Line2D([], [], color='black', linewidth=2, label=f'Max: {max_value:.2f}')
 
-    handles = [plt.Line2D([], [], color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}'),
-            plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'),
-            dummy_min, dummy_max]
+    handles = [plt.Line2D([], [], color='b', linestyle='dashed', linewidth=2, label=f'Median: {median:.2f}'), dummy_min, dummy_max] # plt.Line2D([], [], color='r', linestyle='dashed', linewidth=2, label=f'Mean: {mean:.2f}'),
 
     plt.legend(handles=handles, fontsize=8)
 

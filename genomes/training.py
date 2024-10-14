@@ -32,7 +32,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # epoch + 1 - The number of completed epochs, including early stopping if triggered
 # and the graphs that were produced during the training as pdf files 
 
-def v3(model, folder, optimizer, scheduler, n_epochs, train_loader, val_loader, min_beta, max_beta, start_gamma, stop_gamma, weight, max_norm, lambda_l1):
+def v3(model, folder, optimizer, scheduler, n_epochs, train_loader, val_loader, min_beta, max_beta, gamma_start, gamma_end, weight, max_norm, lambda_l1):
     '''
     Training function for a VAE model which uses linear KL annealing, gradient clipping, early stoppping, l1 regularisation and modified loss fucntion wich includes gene_abundance AND genome size which use linear annealing wiht different coefficients 
 
@@ -59,7 +59,7 @@ def v3(model, folder, optimizer, scheduler, n_epochs, train_loader, val_loader, 
     val_gene_loss_vals = []
 
     for epoch in range(n_epochs):
-        gamma = start_gamma + (stop_gamma - start_gamma) * epoch / n_epochs
+        gamma = gamma_start + (gamma_end - gamma_start) * epoch / n_epochs
         model.train()
 
         epoch_train_loss = 0.0

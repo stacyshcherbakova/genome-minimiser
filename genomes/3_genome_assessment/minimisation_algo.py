@@ -190,10 +190,12 @@ def main():
     print("********************************************")
     print("* Welcome to genome minimiser application! *")
     print("********************************************")
-    # /Users/anastasiiashcherbakova/git_projects/masters_project/data/sequence.gb
+    # /Users/anastasiiashcherbakova/git_projects/masters_project/data/wild_type_sequence.gb
     WILD_TYPE_SEQUENCE = input("Please enter path for the GeneBank sequence file: ")
-    # /Users/anastasiiashcherbakova/git_projects/masters_project/large_dataset_new_loss/cleaned_genes_lists.npy
+    # /Users/anastasiiashcherbakova/git_projects/masters_project/data/cleaned_genes_lists_1.npy
+    
     PRESENT_GENES = input("Please enter path to the list of lists of sample genes: ")
+    WEIGHT = float(input("Please enter the weight of the model: "))
     
     print("Loading datasets...")
     wildtype_sequence = load_genome(WILD_TYPE_SEQUENCE)
@@ -205,7 +207,7 @@ def main():
     for idx, needed_genes in enumerate(present_genes):
         minimiser = GenomeMinimiser(wildtype_sequence, needed_genes, idx+1)
         minimized_genome_filename = f"/Users/anastasiiashcherbakova/git_projects/masters_project/data/generated_genomes/minimized_genome_{minimiser.idx}.fasta"
-        minimiser.save_minimized_genome(minimized_genome_filename)
+        # minimiser.save_minimized_genome(minimized_genome_filename)
 
         print(f"Minimal set of genes no. {minimiser.idx}:")
         print(f"Original genome length: {original_genome_length}")
@@ -216,23 +218,22 @@ def main():
 
     if len(present_genes) >= 100:
         print("Plotting reduced genomes size distribution graph...")
-        mean = np.mean(minimised_genomes_sizes)
+        # mean = np.mean(minimised_genomes_sizes)
         median = np.median(minimised_genomes_sizes)
         min_value = np.min(minimised_genomes_sizes)
         max_value = np.max(minimised_genomes_sizes)
-        plt.figure(figsize=(10,10))
+        plt.figure(figsize=(4,4))
         plt.hist(minimised_genomes_sizes, bins=10, color="dodgerblue")
         plt.xlabel("Genome size (Mbp)")
         plt.ylabel("Frequency")
-        plt.axvline(mean, color="r", linestyle="dashed", linewidth=2, label=f"Mean: {mean:.2f}")
+        # plt.axvline(mean, color="r", linestyle="dashed", linewidth=2, label=f"Mean: {mean:.2f}")
         plt.axvline(median, color="b", linestyle="dashed", linewidth=2, label=f"Median: {median:.2f}")
         dummy_min = plt.Line2D([], [], color="black",  linewidth=2, label=f"Min: {min_value:.2f}")
         dummy_max = plt.Line2D([], [], color="black", linewidth=2, label=f"Max: {max_value:.2f}")
-        handles = [plt.Line2D([], [], color="r", linestyle="dashed", linewidth=2, label=f"Mean: {mean:.2f}"),
-                plt.Line2D([], [], color="b", linestyle="dashed", linewidth=2, label=f"Median: {median:.2f}"),
-                dummy_min, dummy_max]
+        handles = [plt.Line2D([], [], color="b", linestyle="dashed", linewidth=2, label=f"Median: {median:.2f}"),
+                dummy_min, dummy_max] # plt.Line2D([], [], color="r", linestyle="dashed", linewidth=2, label=f"Mean: {mean:.2f}"),
         plt.legend(handles=handles)
-        plt.savefig("/Users/anastasiiashcherbakova/git_projects/masters_project/figures/minimised_genomes_distribution.pdf", format="pdf", bbox_inches="tight")
+        plt.savefig(f"/Users/anastasiiashcherbakova/git_projects/masters_project/figures/minimised_genomes_distribution_{WEIGHT}.pdf", format="pdf", bbox_inches="tight")
         plt.show()
     
     print("Script has successfully finished executing.")

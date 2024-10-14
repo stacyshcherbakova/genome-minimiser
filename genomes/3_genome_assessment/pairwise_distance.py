@@ -5,8 +5,9 @@ import pandas as pd
 from scipy.spatial.distance import pdist, squareform
 from scipy.cluster.hierarchy import linkage, to_tree
 
-SAMPLES = 1000
+SAMPLES = 100
 
+# /Users/anastasiiashcherbakova/git_projects/masters_project/data/additional_generated_samples_v3_3.npy
 data_dir="/Users/anastasiiashcherbakova/git_projects/masters_project/data/"
 # large_data = pd.read_csv(data_dir+"F4_complete_presence_absence.csv", index_col=[0], header=[0])
 # phylogroup_data = pd.read_csv(data_dir+"accessionID_phylogroup_BD.csv", index_col=[0], header=[0])
@@ -16,8 +17,10 @@ data_dir="/Users/anastasiiashcherbakova/git_projects/masters_project/data/"
 # data_array_t = np.array(merged_df.iloc[:, :-1]).tolist()[:SAMPLES]
 # phylogroups_array = np.array(merged_df.iloc[:, -1])
 
+ADDITIONAL_SAMPLES = input("Please enter name of the additional generated samples: ")
+WEIGHT = input("Please enter the weight: ")
 
-presence_absence_matrix = np.load(data_dir+"additional_generated_samples.npy", allow_pickle=True).tolist()[:SAMPLES]
+presence_absence_matrix = np.load(data_dir+ADDITIONAL_SAMPLES, allow_pickle=True).tolist()[:SAMPLES]
 
 pairwise_dist = pdist(presence_absence_matrix, metric='jaccard')
 
@@ -37,7 +40,7 @@ def to_newick(tree, labels, parent_dist=0):
 tree, nodes = to_tree(linkage_matrix, rd=True)
 newick_str = to_newick(tree, [f'Sample {i+1}' for i in range(SAMPLES)]) + ";"
 
-with open(data_dir+"upgma_tree_final_dataset.newick", "w") as f:
+with open(data_dir+"upgma_tree_"+WEIGHT+".newick", "w") as f:
     f.write(newick_str)
 
-np.savetxt(data_dir+"pairwise_distances_final_dataset.csv", distance_matrix, delimiter=',')
+np.savetxt(data_dir+"pairwise_distances_final_dataset_"+WEIGHT+".csv", distance_matrix, delimiter=',')
